@@ -15,6 +15,8 @@ namespace core {
         this->screen = NULL;
         running = false;
         ticks = 0;
+        
+        this->create = new Create(this);
     }
     
     Engine::~Engine() {
@@ -69,7 +71,10 @@ namespace core {
             
             dt = SDL_GetTicks() - this->ticks;
             if (dt>0) {
+                fps.Update(dt);
                 this->Update(dt);
+                
+                fps.Draw();
                 this->Draw(dt);
             }
             this->ticks = SDL_GetTicks();
@@ -83,5 +88,9 @@ namespace core {
         SDL_DestroyRenderer(this->renderer);
         SDL_DestroyWindow(this->window);
         SDL_Quit();
+    }
+    
+    SDL_Renderer *Engine::GetRenderer() {
+        return this->renderer;
     }
 }

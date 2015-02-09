@@ -15,8 +15,10 @@
 		A718EA791A87E5430016CF14 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A718EA771A87E5430016CF14 /* Camera.cpp */; };
 		A718EA801A87E7E50016CF14 /* InputCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A718EA7E1A87E7E50016CF14 /* InputCommand.cpp */; };
 		A718EA831A87F4580016CF14 /* InputKeyMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A718EA811A87F4580016CF14 /* InputKeyMap.cpp */; };
-		A718EA881A8876C70016CF14 /* spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = A718EA861A8876AB0016CF14 /* spaceship.png */; };
 		A718EA8B1A88772E0016CF14 /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A718EA8A1A88772E0016CF14 /* SDL2_image.framework */; };
+		A718EA8D1A8877DB0016CF14 /* content in Resources */ = {isa = PBXBuildFile; fileRef = A718EA8C1A8877DB0016CF14 /* content */; };
+		A718EA901A887ACF0016CF14 /* Create.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A718EA8E1A887ACF0016CF14 /* Create.cpp */; };
+		A718EA931A895D2A0016CF14 /* Fps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A718EA911A895D2A0016CF14 /* Fps.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,8 +38,12 @@
 		A718EA7F1A87E7E50016CF14 /* InputCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InputCommand.h; path = BlackLid/input/InputCommand.h; sourceTree = "<group>"; };
 		A718EA811A87F4580016CF14 /* InputKeyMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = InputKeyMap.cpp; path = BlackLid/input/InputKeyMap.cpp; sourceTree = "<group>"; };
 		A718EA821A87F4580016CF14 /* InputKeyMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InputKeyMap.h; path = BlackLid/input/InputKeyMap.h; sourceTree = "<group>"; };
-		A718EA861A8876AB0016CF14 /* spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spaceship.png; sourceTree = "<group>"; };
 		A718EA8A1A88772E0016CF14 /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_image.framework; path = ../../../../Library/Frameworks/SDL2_image.framework; sourceTree = "<group>"; };
+		A718EA8C1A8877DB0016CF14 /* content */ = {isa = PBXFileReference; lastKnownFileType = folder; name = content; path = BlackLid/content; sourceTree = "<group>"; };
+		A718EA8E1A887ACF0016CF14 /* Create.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Create.cpp; path = BlackLid/core/Create.cpp; sourceTree = "<group>"; };
+		A718EA8F1A887ACF0016CF14 /* Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Create.h; path = BlackLid/core/Create.h; sourceTree = "<group>"; };
+		A718EA911A895D2A0016CF14 /* Fps.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Fps.cpp; path = BlackLid/core/Fps.cpp; sourceTree = "<group>"; };
+		A718EA921A895D2A0016CF14 /* Fps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Fps.h; path = BlackLid/core/Fps.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +62,7 @@
 		A718EA321A87CA380016CF14 = {
 			isa = PBXGroup;
 			children = (
-				A718EA841A8876AB0016CF14 /* content */,
+				A718EA8C1A8877DB0016CF14 /* content */,
 				A718EA7D1A87E6950016CF14 /* input */,
 				A718EA891A8877060016CF14 /* Frameworks */,
 				A718EA6B1A87CC3C0016CF14 /* core */,
@@ -101,6 +107,10 @@
 				A718EA751A87DD540016CF14 /* BlackLidEngine.h */,
 				A718EA771A87E5430016CF14 /* Camera.cpp */,
 				A718EA781A87E5430016CF14 /* Camera.h */,
+				A718EA8E1A887ACF0016CF14 /* Create.cpp */,
+				A718EA8F1A887ACF0016CF14 /* Create.h */,
+				A718EA911A895D2A0016CF14 /* Fps.cpp */,
+				A718EA921A895D2A0016CF14 /* Fps.h */,
 			);
 			name = core;
 			sourceTree = "<group>";
@@ -114,23 +124,6 @@
 				A718EA821A87F4580016CF14 /* InputKeyMap.h */,
 			);
 			name = input;
-			sourceTree = "<group>";
-		};
-		A718EA841A8876AB0016CF14 /* content */ = {
-			isa = PBXGroup;
-			children = (
-				A718EA851A8876AB0016CF14 /* test */,
-			);
-			name = content;
-			path = BlackLid/content;
-			sourceTree = "<group>";
-		};
-		A718EA851A8876AB0016CF14 /* test */ = {
-			isa = PBXGroup;
-			children = (
-				A718EA861A8876AB0016CF14 /* spaceship.png */,
-			);
-			path = test;
 			sourceTree = "<group>";
 		};
 		A718EA891A8877060016CF14 /* Frameworks */ = {
@@ -199,7 +192,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A718EA881A8876C70016CF14 /* spaceship.png in Resources */,
+				A718EA8D1A8877DB0016CF14 /* content in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A718EA931A895D2A0016CF14 /* Fps.cpp in Sources */,
 				A718EA651A87CA800016CF14 /* main.cpp in Sources */,
 				A718EA6A1A87CB8B0016CF14 /* Engine.cpp in Sources */,
 				A718EA801A87E7E50016CF14 /* InputCommand.cpp in Sources */,
@@ -217,6 +211,7 @@
 				A718EA711A87D03E0016CF14 /* GameException.cpp in Sources */,
 				A718EA761A87DD540016CF14 /* BlackLidEngine.cpp in Sources */,
 				A718EA831A87F4580016CF14 /* InputKeyMap.cpp in Sources */,
+				A718EA901A887ACF0016CF14 /* Create.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

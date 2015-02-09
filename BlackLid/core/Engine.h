@@ -15,6 +15,8 @@
 #include <SDL2/SDL.h>
 
 #include "GameException.h"
+#include "Create.h"
+#include "Fps.h"
 #include "../input/InputCommand.h"
 
 using namespace input;
@@ -23,6 +25,7 @@ namespace core {
     class Engine {
     private:
         bool running;
+        Fps fps;
         
     protected:
         SDL_Renderer *renderer;
@@ -30,7 +33,9 @@ namespace core {
         SDL_Surface *screen;
         Uint32 ticks;
         SDL_Event e;
+        Create *create;
         InputCommand player1, player2;
+        
         virtual void Update(Uint32 dt) = 0;
         virtual void Draw(Uint32 dt) = 0;
         
@@ -41,6 +46,8 @@ namespace core {
         void Setup();
         void Run();
         void Quit();
+        
+        SDL_Renderer *GetRenderer();
     };
 }
 
