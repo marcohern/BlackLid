@@ -7,37 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A718EA421A87CA380016CF14 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A718EA411A87CA380016CF14 /* AppDelegate.m */; };
-		A718EA441A87CA380016CF14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A718EA431A87CA380016CF14 /* main.m */; };
-		A718EA471A87CA380016CF14 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A718EA461A87CA380016CF14 /* ViewController.m */; };
-		A718EA491A87CA380016CF14 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A718EA481A87CA380016CF14 /* Images.xcassets */; };
-		A718EA4C1A87CA380016CF14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A718EA4A1A87CA380016CF14 /* Main.storyboard */; };
-		A718EA581A87CA380016CF14 /* BlackLidTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A718EA571A87CA380016CF14 /* BlackLidTests.m */; };
+		A718EA651A87CA800016CF14 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A718EA641A87CA800016CF14 /* main.cpp */; };
+		A718EA6A1A87CB8B0016CF14 /* Engine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A718EA681A87CB8B0016CF14 /* Engine.cpp */; };
+		A718EA711A87D03E0016CF14 /* GameException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A718EA6F1A87D03E0016CF14 /* GameException.cpp */; };
+		A718EA731A87DB540016CF14 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A718EA721A87DB540016CF14 /* SDL2.framework */; };
+		A718EA761A87DD540016CF14 /* BlackLidEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A718EA741A87DD540016CF14 /* BlackLidEngine.cpp */; };
+		A718EA791A87E5430016CF14 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A718EA771A87E5430016CF14 /* Camera.cpp */; };
+		A718EA801A87E7E50016CF14 /* InputCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A718EA7E1A87E7E50016CF14 /* InputCommand.cpp */; };
+		A718EA831A87F4580016CF14 /* InputKeyMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A718EA811A87F4580016CF14 /* InputKeyMap.cpp */; };
+		A718EA881A8876C70016CF14 /* spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = A718EA861A8876AB0016CF14 /* spaceship.png */; };
+		A718EA8B1A88772E0016CF14 /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A718EA8A1A88772E0016CF14 /* SDL2_image.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		A718EA521A87CA380016CF14 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A718EA331A87CA380016CF14 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A718EA3A1A87CA380016CF14;
-			remoteInfo = BlackLid;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A718EA3B1A87CA380016CF14 /* BlackLid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackLid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A718EA3F1A87CA380016CF14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A718EA401A87CA380016CF14 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		A718EA411A87CA380016CF14 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A718EA431A87CA380016CF14 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A718EA451A87CA380016CF14 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A718EA461A87CA380016CF14 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		A718EA481A87CA380016CF14 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		A718EA4B1A87CA380016CF14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A718EA511A87CA380016CF14 /* BlackLidTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlackLidTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A718EA561A87CA380016CF14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A718EA571A87CA380016CF14 /* BlackLidTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlackLidTests.m; sourceTree = "<group>"; };
+		A718EA641A87CA800016CF14 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A718EA681A87CB8B0016CF14 /* Engine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Engine.cpp; path = BlackLid/core/Engine.cpp; sourceTree = "<group>"; };
+		A718EA691A87CB8B0016CF14 /* Engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Engine.h; path = BlackLid/core/Engine.h; sourceTree = "<group>"; };
+		A718EA6F1A87D03E0016CF14 /* GameException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameException.cpp; path = BlackLid/core/GameException.cpp; sourceTree = "<group>"; };
+		A718EA701A87D03E0016CF14 /* GameException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameException.h; path = BlackLid/core/GameException.h; sourceTree = "<group>"; };
+		A718EA721A87DB540016CF14 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = /Library/Frameworks/SDL2.framework; sourceTree = "<absolute>"; };
+		A718EA741A87DD540016CF14 /* BlackLidEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BlackLidEngine.cpp; path = BlackLid/core/BlackLidEngine.cpp; sourceTree = "<group>"; };
+		A718EA751A87DD540016CF14 /* BlackLidEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BlackLidEngine.h; path = BlackLid/core/BlackLidEngine.h; sourceTree = "<group>"; };
+		A718EA771A87E5430016CF14 /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Camera.cpp; path = BlackLid/core/Camera.cpp; sourceTree = "<group>"; };
+		A718EA781A87E5430016CF14 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Camera.h; path = BlackLid/core/Camera.h; sourceTree = "<group>"; };
+		A718EA7E1A87E7E50016CF14 /* InputCommand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = InputCommand.cpp; path = BlackLid/input/InputCommand.cpp; sourceTree = "<group>"; };
+		A718EA7F1A87E7E50016CF14 /* InputCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InputCommand.h; path = BlackLid/input/InputCommand.h; sourceTree = "<group>"; };
+		A718EA811A87F4580016CF14 /* InputKeyMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = InputKeyMap.cpp; path = BlackLid/input/InputKeyMap.cpp; sourceTree = "<group>"; };
+		A718EA821A87F4580016CF14 /* InputKeyMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InputKeyMap.h; path = BlackLid/input/InputKeyMap.h; sourceTree = "<group>"; };
+		A718EA861A8876AB0016CF14 /* spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spaceship.png; sourceTree = "<group>"; };
+		A718EA8A1A88772E0016CF14 /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_image.framework; path = ../../../../Library/Frameworks/SDL2_image.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,13 +45,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A718EA4E1A87CA380016CF14 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				A718EA8B1A88772E0016CF14 /* SDL2_image.framework in Frameworks */,
+				A718EA731A87DB540016CF14 /* SDL2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,8 +56,11 @@
 		A718EA321A87CA380016CF14 = {
 			isa = PBXGroup;
 			children = (
+				A718EA841A8876AB0016CF14 /* content */,
+				A718EA7D1A87E6950016CF14 /* input */,
+				A718EA891A8877060016CF14 /* Frameworks */,
+				A718EA6B1A87CC3C0016CF14 /* core */,
 				A718EA3D1A87CA380016CF14 /* BlackLid */,
-				A718EA541A87CA380016CF14 /* BlackLidTests */,
 				A718EA3C1A87CA380016CF14 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,7 +69,6 @@
 			isa = PBXGroup;
 			children = (
 				A718EA3B1A87CA380016CF14 /* BlackLid.app */,
-				A718EA511A87CA380016CF14 /* BlackLidTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,13 +76,8 @@
 		A718EA3D1A87CA380016CF14 /* BlackLid */ = {
 			isa = PBXGroup;
 			children = (
-				A718EA401A87CA380016CF14 /* AppDelegate.h */,
-				A718EA411A87CA380016CF14 /* AppDelegate.m */,
-				A718EA451A87CA380016CF14 /* ViewController.h */,
-				A718EA461A87CA380016CF14 /* ViewController.m */,
-				A718EA481A87CA380016CF14 /* Images.xcassets */,
-				A718EA4A1A87CA380016CF14 /* Main.storyboard */,
 				A718EA3E1A87CA380016CF14 /* Supporting Files */,
+				A718EA641A87CA800016CF14 /* main.cpp */,
 			);
 			path = BlackLid;
 			sourceTree = "<group>";
@@ -94,26 +86,60 @@
 			isa = PBXGroup;
 			children = (
 				A718EA3F1A87CA380016CF14 /* Info.plist */,
-				A718EA431A87CA380016CF14 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A718EA541A87CA380016CF14 /* BlackLidTests */ = {
+		A718EA6B1A87CC3C0016CF14 /* core */ = {
 			isa = PBXGroup;
 			children = (
-				A718EA571A87CA380016CF14 /* BlackLidTests.m */,
-				A718EA551A87CA380016CF14 /* Supporting Files */,
+				A718EA681A87CB8B0016CF14 /* Engine.cpp */,
+				A718EA691A87CB8B0016CF14 /* Engine.h */,
+				A718EA6F1A87D03E0016CF14 /* GameException.cpp */,
+				A718EA701A87D03E0016CF14 /* GameException.h */,
+				A718EA741A87DD540016CF14 /* BlackLidEngine.cpp */,
+				A718EA751A87DD540016CF14 /* BlackLidEngine.h */,
+				A718EA771A87E5430016CF14 /* Camera.cpp */,
+				A718EA781A87E5430016CF14 /* Camera.h */,
 			);
-			path = BlackLidTests;
+			name = core;
 			sourceTree = "<group>";
 		};
-		A718EA551A87CA380016CF14 /* Supporting Files */ = {
+		A718EA7D1A87E6950016CF14 /* input */ = {
 			isa = PBXGroup;
 			children = (
-				A718EA561A87CA380016CF14 /* Info.plist */,
+				A718EA7E1A87E7E50016CF14 /* InputCommand.cpp */,
+				A718EA7F1A87E7E50016CF14 /* InputCommand.h */,
+				A718EA811A87F4580016CF14 /* InputKeyMap.cpp */,
+				A718EA821A87F4580016CF14 /* InputKeyMap.h */,
 			);
-			name = "Supporting Files";
+			name = input;
+			sourceTree = "<group>";
+		};
+		A718EA841A8876AB0016CF14 /* content */ = {
+			isa = PBXGroup;
+			children = (
+				A718EA851A8876AB0016CF14 /* test */,
+			);
+			name = content;
+			path = BlackLid/content;
+			sourceTree = "<group>";
+		};
+		A718EA851A8876AB0016CF14 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				A718EA861A8876AB0016CF14 /* spaceship.png */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		A718EA891A8877060016CF14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A718EA8A1A88772E0016CF14 /* SDL2_image.framework */,
+				A718EA721A87DB540016CF14 /* SDL2.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,24 +162,6 @@
 			productReference = A718EA3B1A87CA380016CF14 /* BlackLid.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A718EA501A87CA380016CF14 /* BlackLidTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A718EA5E1A87CA380016CF14 /* Build configuration list for PBXNativeTarget "BlackLidTests" */;
-			buildPhases = (
-				A718EA4D1A87CA380016CF14 /* Sources */,
-				A718EA4E1A87CA380016CF14 /* Frameworks */,
-				A718EA4F1A87CA380016CF14 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A718EA531A87CA380016CF14 /* PBXTargetDependency */,
-			);
-			name = BlackLidTests;
-			productName = BlackLidTests;
-			productReference = A718EA511A87CA380016CF14 /* BlackLidTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,10 +173,6 @@
 				TargetAttributes = {
 					A718EA3A1A87CA380016CF14 = {
 						CreatedOnToolsVersion = 6.1.1;
-					};
-					A718EA501A87CA380016CF14 = {
-						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = A718EA3A1A87CA380016CF14;
 					};
 				};
 			};
@@ -186,7 +190,6 @@
 			projectRoot = "";
 			targets = (
 				A718EA3A1A87CA380016CF14 /* BlackLid */,
-				A718EA501A87CA380016CF14 /* BlackLidTests */,
 			);
 		};
 /* End PBXProject section */
@@ -196,15 +199,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A718EA491A87CA380016CF14 /* Images.xcassets in Resources */,
-				A718EA4C1A87CA380016CF14 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A718EA4F1A87CA380016CF14 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				A718EA881A8876C70016CF14 /* spaceship.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,40 +210,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A718EA471A87CA380016CF14 /* ViewController.m in Sources */,
-				A718EA441A87CA380016CF14 /* main.m in Sources */,
-				A718EA421A87CA380016CF14 /* AppDelegate.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A718EA4D1A87CA380016CF14 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A718EA581A87CA380016CF14 /* BlackLidTests.m in Sources */,
+				A718EA651A87CA800016CF14 /* main.cpp in Sources */,
+				A718EA6A1A87CB8B0016CF14 /* Engine.cpp in Sources */,
+				A718EA801A87E7E50016CF14 /* InputCommand.cpp in Sources */,
+				A718EA791A87E5430016CF14 /* Camera.cpp in Sources */,
+				A718EA711A87D03E0016CF14 /* GameException.cpp in Sources */,
+				A718EA761A87DD540016CF14 /* BlackLidEngine.cpp in Sources */,
+				A718EA831A87F4580016CF14 /* InputKeyMap.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		A718EA531A87CA380016CF14 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A718EA3A1A87CA380016CF14 /* BlackLid */;
-			targetProxy = A718EA521A87CA380016CF14 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		A718EA4A1A87CA380016CF14 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A718EA4B1A87CA380016CF14 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		A718EA591A87CA380016CF14 /* Debug */ = {
@@ -332,6 +304,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = BlackLid/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -343,45 +319,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = BlackLid/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		A718EA5F1A87CA380016CF14 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = BlackLidTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlackLid.app/Contents/MacOS/BlackLid";
-			};
-			name = Debug;
-		};
-		A718EA601A87CA380016CF14 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = BlackLidTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlackLid.app/Contents/MacOS/BlackLid";
 			};
 			name = Release;
 		};
@@ -402,14 +346,6 @@
 			buildConfigurations = (
 				A718EA5C1A87CA380016CF14 /* Debug */,
 				A718EA5D1A87CA380016CF14 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		A718EA5E1A87CA380016CF14 /* Build configuration list for PBXNativeTarget "BlackLidTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A718EA5F1A87CA380016CF14 /* Debug */,
-				A718EA601A87CA380016CF14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
