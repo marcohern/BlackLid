@@ -22,10 +22,11 @@
 using namespace input;
 
 namespace core {
+    class Create;
+    
     class Engine {
     private:
         bool running;
-        Fps fps;
         
     protected:
         SDL_Renderer *renderer;
@@ -35,6 +36,7 @@ namespace core {
         SDL_Event e;
         Create *create;
         InputCommand player1, player2;
+        Fps fps;
         
         virtual void Update(Uint32 dt) = 0;
         virtual void Draw(Uint32 dt) = 0;

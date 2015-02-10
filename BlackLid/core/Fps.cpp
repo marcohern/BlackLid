@@ -13,20 +13,25 @@ namespace core {
         this->fps=0;
         this->dticks=0;
         this->frames=0;
+        this->updated=false;
     }
     
     Fps::~Fps() {
         this->fps=0;
         this->dticks=0;
         this->frames=0;
+        this->updated=false;
     }
     
     void Fps::Update(Uint32 dt) {
         this->dticks += dt;
+        this->updated=false;
         if (this->dticks > FPS_TPS) {
+            printf("FPS: %d\n",this->frames);
             this->fps = this->frames;
             this->frames = 0;
             this->dticks -= FPS_TPS;
+            this->updated = true;
         }
     }
     
@@ -36,5 +41,9 @@ namespace core {
     
     Uint32 Fps::Get() {
         return this->fps;
+    }
+    
+    bool Fps::IsUpdated() {
+        return this->updated;
     }
 }

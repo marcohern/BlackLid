@@ -14,11 +14,15 @@ namespace core {
         this->e = e;
     }
     
-    SDL_Surface *Create::ColorSurface(int w, int h, Uint32 rgba) {
-        SDL_Surface *s = SDL_CreateRGBSurface(0, w, h, 32, 0xFF000000, 0x00FF0000, 0x0000FF00, 0x000000FF);
+    SDL_Texture *Create::ColorSurface(int w, int h, Uint8 r, Uint8 g, Uint8 b, Uint8 a) {
+        SDL_Texture *t = SDL_CreateTexture(this->e->GetRenderer(), SDL_PIXELFORMAT_RGBA4444, CREATE_FLAGS, w, h);
         
+        SDL_Rect rect;rect.x=0;rect.y=0;rect.w=w;rect.h=h;
         
-        SDL_SetRenderDrawColor(this->e->GetRenderer(), 255,255,255,255);
-        return s;
+        SDL_SetRenderTarget(this->e->GetRenderer(), t);
+        SDL_SetRenderDrawColor(this->e->GetRenderer(), r, g, b, a);
+        SDL_RenderFillRect(this->e->GetRenderer(), NULL);
+        
+        return t;
     }
 }

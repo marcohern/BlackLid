@@ -20,12 +20,14 @@ namespace core {
         Uint32 dticks;
         int frames;
         Uint32 fps;
+        bool updated;
     public:
         Fps();
         ~Fps();
         void Update(Uint32 dt);
         void Draw();
         Uint32 Get();
+        bool IsUpdated();
     };
 }
 #endif /* defined(__BlackLid__Fps__) */

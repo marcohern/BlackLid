@@ -63,21 +63,24 @@ namespace core {
                     player1.Update(&e.key);
                 }
             }
-            SDL_SetRenderDrawBlendMode(renderer, SDL_BLENDMODE_NONE);
-            SDL_SetRenderDrawColor( renderer, 0, 0, 0, 255 );
-            SDL_RenderClear( renderer );
-            SDL_RenderFillRect(renderer, NULL);
-            SDL_SetRenderDrawBlendMode(renderer, SDL_BLENDMODE_BLEND);
             
             dt = SDL_GetTicks() - this->ticks;
+            
             if (dt>0) {
                 fps.Update(dt);
                 this->Update(dt);
                 
+                SDL_SetRenderDrawBlendMode(renderer, SDL_BLENDMODE_NONE);
+                SDL_SetRenderDrawColor( renderer, 0, 0, 0, 255 );
+                SDL_SetRenderTarget( renderer, NULL);
+                SDL_RenderClear( renderer );
+                SDL_RenderFillRect(renderer, NULL);
+                SDL_SetRenderDrawBlendMode(renderer, SDL_BLENDMODE_BLEND);
+                
                 fps.Draw();
                 this->Draw(dt);
+                this->ticks = SDL_GetTicks();
             }
-            this->ticks = SDL_GetTicks();
             
             SDL_RenderPresent(renderer);
         }

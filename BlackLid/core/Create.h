@@ -13,6 +13,7 @@
 #include <SDL2/SDL.h>
 #include "Engine.h"
 
+#define CREATE_FLAGS SDL_TEXTUREACCESS_STATIC|SDL_TEXTUREACCESS_TARGET
 
 namespace core {
     class Engine;
@@ -23,7 +24,7 @@ namespace core {
     public:
         Create(core::Engine *e);
         ~Create();
-        SDL_Surface *ColorSurface(int w, int h, Uint32 rgba);
+        SDL_Texture *ColorSurface(int w, int h, Uint8 r, Uint8 g, Uint8 b, Uint8 a);
     };
 }
 #endif /* defined(__BlackLid__Create__) */

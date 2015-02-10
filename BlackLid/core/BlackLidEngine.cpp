@@ -12,20 +12,20 @@ namespace core {
     
     BlackLidEngine::BlackLidEngine():Engine() {
         this->a=0;
-        this->fps=0;
     }
     
     BlackLidEngine::~BlackLidEngine() {
         
     }
     
+    void BlackLidEngine::Setup() {
+        Engine::Setup();
+        
+        s = this->create->ColorSurface(50, 50, 255,255,255,255);
+    }
+    
     void BlackLidEngine::Update(Uint32 dt) {
-        this->a += dt;
-        if (this->a > 1000) {
-            printf("FPS: %d\n",this->fps);
-            this->a-=1000;
-            this->fps=0;
-        }
+
     }
     
     void BlackLidEngine::Draw(Uint32 dt) {
@@ -34,8 +34,12 @@ namespace core {
         r.h=50;
         r.x=50;
         r.y=50;
-        SDL_SetRenderDrawColor(renderer, 255, 0, 0, 127);
+        
+        SDL_SetRenderDrawColor(renderer, 255, 0, 0, 64);
+        
         SDL_RenderFillRect(renderer, &r);
-        this->fps++;
+        
+        r.x = 100;
+        SDL_RenderCopy(renderer, this->s, NULL, &r);
     }
 }

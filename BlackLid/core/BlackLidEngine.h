@@ -14,12 +14,14 @@
 
 namespace core {
     class BlackLidEngine: public Engine {
+    private:
         Uint32 a;
-        Uint32 fps;
+        SDL_Texture *s;
     protected:
         virtual void Update(Uint32 dt);
         virtual void Draw(Uint32 dt);
     public:
+        void Setup();
         BlackLidEngine();
         virtual ~BlackLidEngine();
     };
