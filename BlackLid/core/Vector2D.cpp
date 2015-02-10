@@ -73,4 +73,8 @@ namespace core {
     Vector2D Vector2D::Unit() {
         return Vector2D(this->x/this->GetM(), this->y/this->GetM());
     }
+    
+    bool Vector2D::Equals(Vector2D v) {
+        return ((this->x == v.x) && (this->y == v.y));
+    }
 }

@@ -34,6 +34,7 @@ namespace core {
         float Multiply(Vector2D v);
         float GetAngleBetween(Vector2D v);
         Vector2D Unit();
+        bool Equals(Vector2D v);
     };
 }
 #endif /* defined(__BlackLid__Vector2D__) */
