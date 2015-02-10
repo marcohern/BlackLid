@@ -80,7 +80,7 @@ namespace tests {
         a.Subtract(b);
         
         Assert::AreEqual(a.GetX(), 16.61f);
-        Assert::AreEqual(a.GetY(),112.32f);
+        Assert::AreEqual(a.GetY(), 33.02f);
     }
     
     void Vector2DTest::Multiply_Rationals_Valid() {
@@ -92,13 +92,36 @@ namespace tests {
         Assert::AreEqual(a.GetY(),290.68f);
     }
     
+    void Vector2DTest::Multiply_DotProduct_Valid() {
+        Vector2D a(34.12f,72.67f);
+        Vector2D b(17.51f,39.65f);
+        
+        //r=34.12*17.51+72.67*39.65
+        //r=597,4412+2881,3655
+        //r=3478.8067
+        float r = a.Multiply(b);
+        
+        Assert::AreEqual(r,3478.8067f);
+    }
+    
+    void Vector2DTest::GetAngleBetween_90deg_Valid() {
+        Vector2D a(0.0f,1.0f);
+        Vector2D b(1.0f,0.0f);
+        
+        float r = a.GetAngleBetween(b);
+        
+        Assert::AreEqual(r,1.57079633f);//radians 1.5707rads = 90degs
+    }
+    
     void Vector2DTest::Run() {
-        Execute("Constructor_Empty_Valid----", &Vector2DTest::Constructor_Empty_Valid);
-        Execute("Constructor_NonEmpty_Valid-", &Vector2DTest::Constructor_NonEmpty_Valid);
-        Execute("GetM_Floats_Valid----------", &Vector2DTest::GetM_Floats_Valid);
-        Execute("GetM_Rationals_Valid-------", &Vector2DTest::GetM_Rationals_Valid);
-        Execute("Add_Rationals_Valid--------", &Vector2DTest::Add_Rationals_Valid);
-        Execute("Add_Vectors_Valid----------", &Vector2DTest::Subtract_Rationals_Valid);
-        Execute("Multiply_Rationals_Valid---", &Vector2DTest::Multiply_Rationals_Valid);
+        Execute("Constructor_Empty_Valid-----", &Vector2DTest::Constructor_Empty_Valid);
+        Execute("Constructor_NonEmpty_Valid--", &Vector2DTest::Constructor_NonEmpty_Valid);
+        Execute("GetM_Floats_Valid-----------", &Vector2DTest::GetM_Floats_Valid);
+        Execute("GetM_Rationals_Valid--------", &Vector2DTest::GetM_Rationals_Valid);
+        Execute("Add_Rationals_Valid---------", &Vector2DTest::Add_Rationals_Valid);
+        Execute("Add_Vectors_Valid-----------", &Vector2DTest::Subtract_Rationals_Valid);
+        Execute("Multiply_Rationals_Valid----", &Vector2DTest::Multiply_Rationals_Valid);
+        Execute("Multiply_DotProduct_Valid---", &Vector2DTest::Multiply_DotProduct_Valid);
+        Execute("GetAngleBetween_90deg_Valid-", &Vector2DTest::GetAngleBetween_90deg_Valid);
     }
 }

@@ -67,7 +67,7 @@ namespace core {
     }
     
     float Vector2D::GetAngleBetween(Vector2D v){
-        return this->x*v.x + this->y*v.y/(sqrt(this->x*this->x + v.x*v.x)*sqrt(this->y*this->y + v.y*v.y));
+        return acosf((this->x*v.x + this->y*v.y)/(sqrt(this->x*this->x + v.x*v.x)*sqrt(this->y*this->y + v.y*v.y)));
     }
     
     Vector2D Vector2D::Unit() {

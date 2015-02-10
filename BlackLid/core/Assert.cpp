@@ -20,11 +20,13 @@ namespace core {
     }
     void Assert::AreEqual(float a, float b) {
         float e = a - b;
-        if (e > 0.00000001f) {
-            s.str(std::string());
-            s<<"AreEqual("<<a<<"f,"<<b<<"f) failed!";
-            throw AssertException(s.str());
-        }
+        float l = 0.00001f;
+        if (-l < e && e < l) return;
+        
+        s.str(std::string());
+        s<<"AreEqual("<<a<<"f,"<<b<<"f) failed!";
+        throw AssertException(s.str());
+        
     }
     
     void Assert::AreEqual(Vector2D a, Vector2D b) {

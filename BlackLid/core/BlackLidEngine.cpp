@@ -22,9 +22,9 @@ namespace core {
         Engine::Setup();
         
         color = this->create->Color(50, 50, 255,255,255,255);
-        hgradient = this->create->HGradient(50,50, 0,255,0,255, 255,0,0,255);
-        vgradient = this->create->VGradient(50,50, 255,0,0,255, 0,0,255,255);
-        rgradient = this->create->RGradient(50,50, 255,255,0,255, 255,255,0,0);
+        hgradient = this->create->HGradient(50,50, 0,255,0,255, 255,0,0,0);
+        vgradient = this->create->VGradient(50,50, 255,0,0,255, 0,0,255,0);
+        rgradient = this->create->RGradient(25,25, 255,255,0,255, 255,255,0,0);
     }
     
     void BlackLidEngine::Update(Uint32 dt) {

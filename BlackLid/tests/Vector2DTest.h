@@ -35,6 +35,8 @@ namespace  tests {
         void Add_Rationals_Valid();
         void Subtract_Rationals_Valid();
         void Multiply_Rationals_Valid();
+        void Multiply_DotProduct_Valid();
+        void GetAngleBetween_90deg_Valid();
         
         void Run();
     };

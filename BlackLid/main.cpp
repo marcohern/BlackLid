@@ -35,6 +35,6 @@ void runtest() {
 int main(int argc, const char * args[]) {
     printf("path: %s\n", args[0]);
     Settings::GetInstance()->SetPath(args[0]);
-    rungame();
+    runtest();
     return 0;
 }
