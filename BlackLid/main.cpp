@@ -10,7 +10,11 @@
 
 #include "core/BlackLidEngine.h"
 
+#include "core/Test.h"
+#include "tests/Vector2DTest.h"
+
 using namespace core;
+using namespace tests;
 
 void rungame() {
     BlackLidEngine e;
@@ -24,12 +28,13 @@ void rungame() {
 }
 
 void runtest() {
-    
+    Test::AddTest(new Vector2DTest());
+    Test::RunAllTests();
 }
 
 int main(int argc, const char * args[]) {
     printf("path: %s\n", args[0]);
     Settings::GetInstance()->SetPath(args[0]);
-    rungame();
+    runtest();
     return 0;
 }

@@ -24,6 +24,8 @@
 		A718EA9B1A89B3F40016CF14 /* Settings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A718EA991A89B3F40016CF14 /* Settings.cpp */; };
 		A718EA9E1A89B8450016CF14 /* Assert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A718EA9C1A89B8450016CF14 /* Assert.cpp */; };
 		A718EAA11A89B9850016CF14 /* Test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A718EA9F1A89B9850016CF14 /* Test.cpp */; };
+		A718EAA51A89BC0D0016CF14 /* Vector2DTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A718EAA31A89BC0D0016CF14 /* Vector2DTest.cpp */; };
+		A718EAAB1A89C08E0016CF14 /* AssertException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A718EAA91A89C08E0016CF14 /* AssertException.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,12 @@
 		A718EA9D1A89B8450016CF14 /* Assert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Assert.h; path = BlackLid/core/Assert.h; sourceTree = "<group>"; };
 		A718EA9F1A89B9850016CF14 /* Test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Test.cpp; path = BlackLid/core/Test.cpp; sourceTree = "<group>"; };
 		A718EAA01A89B9850016CF14 /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Test.h; path = BlackLid/core/Test.h; sourceTree = "<group>"; };
+		A718EAA31A89BC0D0016CF14 /* Vector2DTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Vector2DTest.cpp; path = BlackLid/tests/Vector2DTest.cpp; sourceTree = "<group>"; };
+		A718EAA41A89BC0D0016CF14 /* Vector2DTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vector2DTest.h; path = BlackLid/tests/Vector2DTest.h; sourceTree = "<group>"; };
+		A718EAA61A89BEDB0016CF14 /* List.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = List.h; path = BlackLid/core/List.h; sourceTree = "<group>"; };
+		A718EAA71A89BEDB0016CF14 /* ListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListItem.h; path = BlackLid/core/ListItem.h; sourceTree = "<group>"; };
+		A718EAA91A89C08E0016CF14 /* AssertException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AssertException.cpp; sourceTree = "<group>"; };
+		A718EAAA1A89C08E0016CF14 /* AssertException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssertException.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,13 +84,15 @@
 		A718EA321A87CA380016CF14 = {
 			isa = PBXGroup;
 			children = (
-				A718EA971A89AFF40016CF14 /* testout */,
-				A718EA8C1A8877DB0016CF14 /* content */,
-				A718EA7D1A87E6950016CF14 /* input */,
-				A718EA891A8877060016CF14 /* Frameworks */,
-				A718EA6B1A87CC3C0016CF14 /* core */,
 				A718EA3D1A87CA380016CF14 /* BlackLid */,
+				A718EA8C1A8877DB0016CF14 /* content */,
+				A718EA6B1A87CC3C0016CF14 /* core */,
+				A718EAA81A89C0770016CF14 /* exceptions */,
+				A718EA891A8877060016CF14 /* Frameworks */,
+				A718EA7D1A87E6950016CF14 /* input */,
 				A718EA3C1A87CA380016CF14 /* Products */,
+				A718EA971A89AFF40016CF14 /* testout */,
+				A718EAA21A89BBD80016CF14 /* tests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,6 +124,8 @@
 		A718EA6B1A87CC3C0016CF14 /* core */ = {
 			isa = PBXGroup;
 			children = (
+				A718EAA61A89BEDB0016CF14 /* List.h */,
+				A718EAA71A89BEDB0016CF14 /* ListItem.h */,
 				A718EA681A87CB8B0016CF14 /* Engine.cpp */,
 				A718EA691A87CB8B0016CF14 /* Engine.h */,
 				A718EA6F1A87D03E0016CF14 /* GameException.cpp */,
@@ -156,6 +168,25 @@
 				A718EA721A87DB540016CF14 /* SDL2.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A718EAA21A89BBD80016CF14 /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				A718EAA31A89BC0D0016CF14 /* Vector2DTest.cpp */,
+				A718EAA41A89BC0D0016CF14 /* Vector2DTest.h */,
+			);
+			name = tests;
+			sourceTree = "<group>";
+		};
+		A718EAA81A89C0770016CF14 /* exceptions */ = {
+			isa = PBXGroup;
+			children = (
+				A718EAA91A89C08E0016CF14 /* AssertException.cpp */,
+				A718EAAA1A89C08E0016CF14 /* AssertException.h */,
+			);
+			name = exceptions;
+			path = BlackLid/exceptions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A718EA931A895D2A0016CF14 /* Fps.cpp in Sources */,
+				A718EAAB1A89C08E0016CF14 /* AssertException.cpp in Sources */,
 				A718EA9E1A89B8450016CF14 /* Assert.cpp in Sources */,
 				A718EA651A87CA800016CF14 /* main.cpp in Sources */,
 				A718EAA11A89B9850016CF14 /* Test.cpp in Sources */,
@@ -239,6 +271,7 @@
 				A718EA761A87DD540016CF14 /* BlackLidEngine.cpp in Sources */,
 				A718EA831A87F4580016CF14 /* InputKeyMap.cpp in Sources */,
 				A718EA961A89A7380016CF14 /* Vector2D.cpp in Sources */,
+				A718EAA51A89BC0D0016CF14 /* Vector2DTest.cpp in Sources */,
 				A718EA901A887ACF0016CF14 /* Create.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

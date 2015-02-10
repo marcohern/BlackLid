@@ -10,12 +10,15 @@
 #define __BlackLid__Assert__
 
 #include <stdio.h>
+#include "../exceptions/AssertException.h"
 #include "Vector2D.h"
+
 namespace core {
     class Assert {
-        bool AreEqual(int a, int b);
-        bool AreEqual(float a, float b);
-        bool AreEqual(Vector2D a, Vector2D b);
+    public:
+        static bool AreEqual(int a, int b);
+        static bool AreEqual(float a, float b);
+        static bool AreEqual(Vector2D a, Vector2D b);
     };
 }
 #endif /* defined(__BlackLid__Assert__) */

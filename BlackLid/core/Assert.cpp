@@ -8,9 +8,13 @@
 
 #include "Assert.h"
 
+using namespace exceptions;
+
 namespace core {
     bool Assert::AreEqual(int a, int b) {
-        return (a==b);
+        bool r = (a==b);
+        if (!r) throw AssertException("AreEqual(int,int) failed!");
+        return r;
     }
     bool Assert::AreEqual(float a, float b) {
         return (a==b);

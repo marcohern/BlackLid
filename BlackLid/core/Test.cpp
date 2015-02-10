@@ -1,28 +1,39 @@
-//
-//  Test.cpp
-//  BlackLid
-//
-//  Created by Marco Hernandez on 9/02/15.
-//  Copyright (c) 2015 Marco Hernandez. All rights reserved.
-//
+
 
 #include "Test.h"
 
 namespace core {
+
     Test::Test() {
-        this->name = "";
     }
-    Test::Test(std::string name) {
-        this->name = name;
-    }
-    
+
     Test::~Test() {
-        
     }
-    
-    void Test::Run() {
-        Setup();
-        Execute();
-        Teardown();
+
+    void Test::Setup() {
     }
+
+    void Test::TearDown() {
+    }
+
+    List<Test> *Test::GetTests() {
+        if (tests == NULL) {
+            tests = new List<Test>();
+        }
+        return tests;
+    }
+
+    void Test::AddTest(Test *t) {
+        GetTests()->Add(t);
+    }
+
+    void Test::RunAllTests() {
+        List<Test> *l = GetTests();
+        for (Test *t = l->Begin(); !l->Finished(); t = l->Next()) {
+            t->Run();
+        }
+    }
+
+    List<Test> *Test::tests = NULL;
 }
+

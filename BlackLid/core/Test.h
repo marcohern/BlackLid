@@ -1,32 +1,28 @@
-//
-//  Test.h
-//  BlackLid
-//
-//  Created by Marco Hernandez on 9/02/15.
-//  Copyright (c) 2015 Marco Hernandez. All rights reserved.
-//
+#ifndef TEST_H_INCLUDED
+#define TEST_H_INCLUDED
 
-#ifndef __BlackLid__Test__
-#define __BlackLid__Test__
+#include "List.h"
 
-#include <stdio.h>
-#include <string>
 
 namespace core {
+
     class Test {
     private:
-        std::string name;
-    protected:
-        virtual void Setup() = 0;
-        virtual void Teardown() = 0;
-        virtual void Execute() = 0;
+        static List<Test> *tests;
+        static List<Test> *GetTests();
     public:
         Test();
-        Test(std::string name);
-        ~Test();
-        
-        void Run();
+        virtual ~Test();
+
+        virtual void Setup();
+        virtual void TearDown();
+
+        virtual void Run() = 0;
+
+        static void AddTest(Test *t);
+        static void RunAllTests();
     };
+
 }
 
-#endif /* defined(__BlackLid__Test__) */
+#endif // TEST_H_INCLUDED
