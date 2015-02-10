@@ -12,7 +12,7 @@
 
 using namespace core;
 
-int main(int argc, const char * args[]) {
+void rungame() {
     BlackLidEngine e;
     try {
         e.Setup();
@@ -21,5 +21,15 @@ int main(int argc, const char * args[]) {
     } catch (GameException ex) {
         printf("Error: %s",ex.what());
     }
+}
+
+void runtest() {
+    
+}
+
+int main(int argc, const char * args[]) {
+    printf("path: %s\n", args[0]);
+    Settings::GetInstance()->SetPath(args[0]);
+    rungame();
     return 0;
 }

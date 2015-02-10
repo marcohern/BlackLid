@@ -14,6 +14,7 @@
 #include <exception>
 #include <SDL2/SDL.h>
 
+#include "Settings.h"
 #include "GameException.h"
 #include "Create.h"
 #include "Fps.h"

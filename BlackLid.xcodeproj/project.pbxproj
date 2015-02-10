@@ -20,6 +20,8 @@
 		A718EA901A887ACF0016CF14 /* Create.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A718EA8E1A887ACF0016CF14 /* Create.cpp */; };
 		A718EA931A895D2A0016CF14 /* Fps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A718EA911A895D2A0016CF14 /* Fps.cpp */; };
 		A718EA961A89A7380016CF14 /* Vector2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A718EA941A89A7380016CF14 /* Vector2D.cpp */; };
+		A718EA981A89AFF40016CF14 /* testout in Resources */ = {isa = PBXBuildFile; fileRef = A718EA971A89AFF40016CF14 /* testout */; };
+		A718EA9B1A89B3F40016CF14 /* Settings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A718EA991A89B3F40016CF14 /* Settings.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,9 @@
 		A718EA921A895D2A0016CF14 /* Fps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Fps.h; path = BlackLid/core/Fps.h; sourceTree = "<group>"; };
 		A718EA941A89A7380016CF14 /* Vector2D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Vector2D.cpp; path = BlackLid/core/Vector2D.cpp; sourceTree = "<group>"; };
 		A718EA951A89A7380016CF14 /* Vector2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vector2D.h; path = BlackLid/core/Vector2D.h; sourceTree = "<group>"; };
+		A718EA971A89AFF40016CF14 /* testout */ = {isa = PBXFileReference; lastKnownFileType = folder; name = testout; path = BlackLid/testout; sourceTree = "<group>"; };
+		A718EA991A89B3F40016CF14 /* Settings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Settings.cpp; path = BlackLid/core/Settings.cpp; sourceTree = "<group>"; };
+		A718EA9A1A89B3F40016CF14 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Settings.h; path = BlackLid/core/Settings.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +70,7 @@
 		A718EA321A87CA380016CF14 = {
 			isa = PBXGroup;
 			children = (
+				A718EA971A89AFF40016CF14 /* testout */,
 				A718EA8C1A8877DB0016CF14 /* content */,
 				A718EA7D1A87E6950016CF14 /* input */,
 				A718EA891A8877060016CF14 /* Frameworks */,
@@ -116,6 +122,8 @@
 				A718EA921A895D2A0016CF14 /* Fps.h */,
 				A718EA941A89A7380016CF14 /* Vector2D.cpp */,
 				A718EA951A89A7380016CF14 /* Vector2D.h */,
+				A718EA991A89B3F40016CF14 /* Settings.cpp */,
+				A718EA9A1A89B3F40016CF14 /* Settings.h */,
 			);
 			name = core;
 			sourceTree = "<group>";
@@ -198,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A718EA8D1A8877DB0016CF14 /* content in Resources */,
+				A718EA981A89AFF40016CF14 /* testout in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +223,7 @@
 				A718EA801A87E7E50016CF14 /* InputCommand.cpp in Sources */,
 				A718EA791A87E5430016CF14 /* Camera.cpp in Sources */,
 				A718EA711A87D03E0016CF14 /* GameException.cpp in Sources */,
+				A718EA9B1A89B3F40016CF14 /* Settings.cpp in Sources */,
 				A718EA761A87DD540016CF14 /* BlackLidEngine.cpp in Sources */,
 				A718EA831A87F4580016CF14 /* InputKeyMap.cpp in Sources */,
 				A718EA961A89A7380016CF14 /* Vector2D.cpp in Sources */,
