@@ -16,7 +16,8 @@ namespace core {
     class BlackLidEngine: public Engine {
     private:
         Uint32 a;
-        SDL_Texture *s;
+        SDL_Texture *color;
+        SDL_Texture *hgradient;
     protected:
         virtual void Update(Uint32 dt);
         virtual void Draw(Uint32 dt);
