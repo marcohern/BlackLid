@@ -55,7 +55,7 @@ namespace core {
             SDL_SetRenderDrawColor(this->e->GetRenderer(), (Uint8)ar, (Uint8)ag, (Uint8)ab, (Uint8)aa);
             SDL_RenderFillRect(this->e->GetRenderer(), &rect);
         }
-        
+        SDL_SetTextureBlendMode(t, SDL_BLENDMODE_BLEND);
         return t;
     }
     
@@ -86,6 +86,50 @@ namespace core {
             SDL_RenderFillRect(this->e->GetRenderer(), &rect);
         }
         
+        SDL_SetTextureBlendMode(t, SDL_BLENDMODE_BLEND);
+        return t;
+    }
+    
+    SDL_Texture *Create::RGradient(int w, int h, Uint8 r1, Uint8 g1, Uint8 b1, Uint8 a1, Uint8 r2, Uint8 g2, Uint8 b2, Uint8 a2) {
+        float fr1 = r1, fg1 = g1, fb1 = b1, fa1 = a1;
+        float fr2 = r2, fg2 = g2, fb2 = b2, fa2 = a2;
+        float fh = h, fw = w;
+        float dr, dg, db, da;
+        
+        Vector2D c(fw/2,fh/2);
+        Vector2D v(0.0,0.0);
+        float vr=0.0f;
+        float radius = fw/2;
+        
+        SDL_Texture *t = SDL_CreateTexture(this->e->GetRenderer(), SDL_PIXELFORMAT_RGBA4444, CREATE_FLAGS, w, h);
+        
+        SDL_Rect rect;rect.x=0;rect.y=0;rect.w=1;rect.h=1;
+        
+        SDL_SetRenderTarget(this->e->GetRenderer(), t);
+        
+        SDL_SetRenderDrawColor(this->e->GetRenderer(), fr2,fg2,fb2,fa2);
+        SDL_RenderFillRect(this->e->GetRenderer(), NULL);
+        SDL_SetRenderDrawBlendMode(this->e->GetRenderer(), SDL_BLENDMODE_NONE);
+        for (int i=0;i<h;i++) {
+            for (int j=0;j<w;j++) {
+                rect.x=j;
+                rect.y=i;
+                v.SetXY(j,i);
+                v.Subtract(c);
+                vr = v.GetM()/radius;
+                if (vr < 1.0f) {
+                    dr = vr*fr2+(1.0f - vr)*fr1;
+                    dg = vr*fg2+(1.0f - vr)*fg1;
+                    db = vr*fb2+(1.0f - vr)*fb1;
+                    da = vr*fa2+(1.0f - vr)*fa1;
+                    
+                    SDL_SetRenderDrawColor(this->e->GetRenderer(), (Uint8)dr, (Uint8)dg, (Uint8)db, (Uint8)da);
+                    SDL_RenderFillRect(this->e->GetRenderer(), &rect);
+                }
+            }
+        }
+        
+        SDL_SetTextureBlendMode(t, SDL_BLENDMODE_BLEND);
         return t;
     }
 }

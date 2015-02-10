@@ -10,11 +10,16 @@
 #define __BlackLid__Assert__
 
 #include <stdio.h>
+#include <string>
+#include <iostream>
+#include <sstream>
+
 #include "../exceptions/AssertException.h"
 #include "Vector2D.h"
 
 namespace core {
     class Assert {
+        static std::stringstream s;
     public:
         static void AreEqual(int a, int b);
         static void AreEqual(float a, float b);

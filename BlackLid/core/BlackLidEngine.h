@@ -19,6 +19,7 @@ namespace core {
         SDL_Texture *color;
         SDL_Texture *hgradient;
         SDL_Texture *vgradient;
+        SDL_Texture *rgradient;
     protected:
         virtual void Update(Uint32 dt);
         virtual void Draw(Uint32 dt);

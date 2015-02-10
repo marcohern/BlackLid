@@ -63,10 +63,42 @@ namespace tests {
         Assert::AreEqual(a.GetM(),80.28140071025169f);
     }
     
+    void Vector2DTest::Add_Rationals_Valid() {
+        Vector2D a(34.12f,72.67f);
+        Vector2D b(17.51f,39.65f);
+        
+        a.Add(b);
+        
+        Assert::AreEqual(a.GetX(), 51.63f);
+        Assert::AreEqual(a.GetY(),112.32f);
+    }
+    
+    void Vector2DTest::Subtract_Rationals_Valid() {
+        Vector2D a(34.12f,72.67f);
+        Vector2D b(17.51f,39.65f);
+        
+        a.Subtract(b);
+        
+        Assert::AreEqual(a.GetX(), 16.61f);
+        Assert::AreEqual(a.GetY(),112.32f);
+    }
+    
+    void Vector2DTest::Multiply_Rationals_Valid() {
+        Vector2D a(34.12f,72.67f);
+        
+        a.Multiply(4);
+        
+        Assert::AreEqual(a.GetX(),136.48f);
+        Assert::AreEqual(a.GetY(),290.68f);
+    }
+    
     void Vector2DTest::Run() {
         Execute("Constructor_Empty_Valid----", &Vector2DTest::Constructor_Empty_Valid);
         Execute("Constructor_NonEmpty_Valid-", &Vector2DTest::Constructor_NonEmpty_Valid);
         Execute("GetM_Floats_Valid----------", &Vector2DTest::GetM_Floats_Valid);
         Execute("GetM_Rationals_Valid-------", &Vector2DTest::GetM_Rationals_Valid);
+        Execute("Add_Rationals_Valid--------", &Vector2DTest::Add_Rationals_Valid);
+        Execute("Add_Vectors_Valid----------", &Vector2DTest::Subtract_Rationals_Valid);
+        Execute("Multiply_Rationals_Valid---", &Vector2DTest::Multiply_Rationals_Valid);
     }
 }

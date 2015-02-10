@@ -10,6 +10,7 @@ namespace core {
     private:
         static List<Test> *tests;
         static List<Test> *GetTests();
+        
     public:
         Test();
         virtual ~Test();

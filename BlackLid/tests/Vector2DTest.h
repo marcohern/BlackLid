@@ -32,6 +32,9 @@ namespace  tests {
         void Constructor_NonEmpty_Valid();
         void GetM_Floats_Valid();
         void GetM_Rationals_Valid();
+        void Add_Rationals_Valid();
+        void Subtract_Rationals_Valid();
+        void Multiply_Rationals_Valid();
         
         void Run();
     };

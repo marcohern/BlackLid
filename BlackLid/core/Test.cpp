@@ -5,6 +5,7 @@
 namespace core {
 
     Test::Test() {
+        
     }
 
     Test::~Test() {

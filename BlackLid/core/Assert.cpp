@@ -12,13 +12,28 @@ using namespace exceptions;
 
 namespace core {
     void Assert::AreEqual(int a, int b) {
-        if (!(a==b)) throw AssertException("AreEqual(int,int) failed!");
+        if (!(a==b)) {
+            s.str(std::string());
+            s<<"AreEqual("<<a<<","<<b<<") failed!";
+            throw AssertException(s.str());
+        }
     }
     void Assert::AreEqual(float a, float b) {
-        if (!(a==b)) throw AssertException("AreEqual(float,float) failed!");
+        float e = a - b;
+        if (e > 0.00000001f) {
+            s.str(std::string());
+            s<<"AreEqual("<<a<<"f,"<<b<<"f) failed!";
+            throw AssertException(s.str());
+        }
     }
     
     void Assert::AreEqual(Vector2D a, Vector2D b) {
-        if (!a.Equals(b)) throw AssertException("AreEqual(Vector2D,Vector2D) failed!");
+        if (!a.Equals(b)) {
+            s.str(std::string());
+            s<<"AreEqual(<"<<a.GetX()<<","<<a.GetY()<<">,<"<<b.GetX()<<","<<b.GetY()<<">) failed!";
+            throw AssertException(s.str());
+        }
     }
+    
+    std::stringstream Assert::s;
 }
