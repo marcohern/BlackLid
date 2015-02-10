@@ -20,7 +20,7 @@ namespace tests {
     
     void Vector2DTest::Execute(std::string name, Vector2DTestMethod method) {
         
-        std::cout<<"RealColorTest::"<<name;
+        std::cout<<"Vector2DTest::"<<name;
         try {
             (this->*method)();
             std::cout<<" OK!\n";
@@ -44,7 +44,29 @@ namespace tests {
         Assert::AreEqual(a.GetY(),0.0f);
     }
     
+    void Vector2DTest::Constructor_NonEmpty_Valid() {
+        Vector2D a(2.45f,3.71f);
+        
+        Assert::AreEqual(a.GetX(),2.45f);
+        Assert::AreEqual(a.GetY(),3.71f);
+    }
+    
+    void Vector2DTest::GetM_Floats_Valid() {
+        Vector2D a(3.0f,4.0f);
+        
+        Assert::AreEqual(a.GetM(),5.0f);
+    }
+    
+    void Vector2DTest::GetM_Rationals_Valid() {
+        Vector2D a(34.12f,72.67f);
+        
+        Assert::AreEqual(a.GetM(),80.28140071025169f);
+    }
+    
     void Vector2DTest::Run() {
-        Execute("Constructor_Empty_Valid", &Vector2DTest::Constructor_Empty_Valid);
+        Execute("Constructor_Empty_Valid----", &Vector2DTest::Constructor_Empty_Valid);
+        Execute("Constructor_NonEmpty_Valid-", &Vector2DTest::Constructor_NonEmpty_Valid);
+        Execute("GetM_Floats_Valid----------", &Vector2DTest::GetM_Floats_Valid);
+        Execute("GetM_Rationals_Valid-------", &Vector2DTest::GetM_Rationals_Valid);
     }
 }

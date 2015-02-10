@@ -29,6 +29,9 @@ namespace  tests {
         void Execute(std::string name, Vector2DTestMethod method);
         
         void Constructor_Empty_Valid();
+        void Constructor_NonEmpty_Valid();
+        void GetM_Floats_Valid();
+        void GetM_Rationals_Valid();
         
         void Run();
     };

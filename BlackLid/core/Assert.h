@@ -16,9 +16,9 @@
 namespace core {
     class Assert {
     public:
-        static bool AreEqual(int a, int b);
-        static bool AreEqual(float a, float b);
-        static bool AreEqual(Vector2D a, Vector2D b);
+        static void AreEqual(int a, int b);
+        static void AreEqual(float a, float b);
+        static void AreEqual(Vector2D a, Vector2D b);
     };
 }
 #endif /* defined(__BlackLid__Assert__) */

@@ -24,12 +24,12 @@ namespace core {
         void SetXY(float x, float y);
         void SetX(float x);
         void SetY(float y);
-        float GetX();
-        float GetY();
-        float GetM();//sqrt(this.x*v.x + this.y*v.y)
+        float GetX() const;
+        float GetY() const;
+        float GetM();
         
-        void Add(Vector2D v); //this+v
-        void Subtract(Vector2D v); //this-v
+        void Add(Vector2D v);
+        void Subtract(Vector2D v);
         void Multiply(float s);
         float Multiply(Vector2D v);
         float GetAngleBetween(Vector2D v);

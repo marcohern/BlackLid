@@ -35,11 +35,11 @@ namespace core {
         this->y = y;
     }
     
-    float Vector2D::GetX() {
+    float Vector2D::GetX() const {
         return this->x;
     }
     
-    float Vector2D::GetY() {
+    float Vector2D::GetY() const {
         return this->y;
     }
     

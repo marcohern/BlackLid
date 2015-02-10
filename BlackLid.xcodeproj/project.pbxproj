@@ -26,6 +26,7 @@
 		A718EAA11A89B9850016CF14 /* Test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A718EA9F1A89B9850016CF14 /* Test.cpp */; };
 		A718EAA51A89BC0D0016CF14 /* Vector2DTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A718EAA31A89BC0D0016CF14 /* Vector2DTest.cpp */; };
 		A718EAAB1A89C08E0016CF14 /* AssertException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A718EAA91A89C08E0016CF14 /* AssertException.cpp */; };
+		A718EAAE1A89CCA50016CF14 /* Matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A718EAAC1A89CCA50016CF14 /* Matrix.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,8 @@
 		A718EAA71A89BEDB0016CF14 /* ListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListItem.h; path = BlackLid/core/ListItem.h; sourceTree = "<group>"; };
 		A718EAA91A89C08E0016CF14 /* AssertException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AssertException.cpp; sourceTree = "<group>"; };
 		A718EAAA1A89C08E0016CF14 /* AssertException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssertException.h; sourceTree = "<group>"; };
+		A718EAAC1A89CCA50016CF14 /* Matrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Matrix.cpp; path = BlackLid/core/Matrix.cpp; sourceTree = "<group>"; };
+		A718EAAD1A89CCA50016CF14 /* Matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Matrix.h; path = BlackLid/core/Matrix.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +149,8 @@
 				A718EA9D1A89B8450016CF14 /* Assert.h */,
 				A718EA9F1A89B9850016CF14 /* Test.cpp */,
 				A718EAA01A89B9850016CF14 /* Test.h */,
+				A718EAAC1A89CCA50016CF14 /* Matrix.cpp */,
+				A718EAAD1A89CCA50016CF14 /* Matrix.h */,
 			);
 			name = core;
 			sourceTree = "<group>";
@@ -258,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A718EAAE1A89CCA50016CF14 /* Matrix.cpp in Sources */,
 				A718EA931A895D2A0016CF14 /* Fps.cpp in Sources */,
 				A718EAAB1A89C08E0016CF14 /* AssertException.cpp in Sources */,
 				A718EA9E1A89B8450016CF14 /* Assert.cpp in Sources */,
@@ -404,6 +410,7 @@
 				A718EA5D1A87CA380016CF14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

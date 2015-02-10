@@ -11,16 +11,14 @@
 using namespace exceptions;
 
 namespace core {
-    bool Assert::AreEqual(int a, int b) {
-        bool r = (a==b);
-        if (!r) throw AssertException("AreEqual(int,int) failed!");
-        return r;
+    void Assert::AreEqual(int a, int b) {
+        if (!(a==b)) throw AssertException("AreEqual(int,int) failed!");
     }
-    bool Assert::AreEqual(float a, float b) {
-        return (a==b);
+    void Assert::AreEqual(float a, float b) {
+        if (!(a==b)) throw AssertException("AreEqual(float,float) failed!");
     }
     
-    bool Assert::AreEqual(Vector2D a, Vector2D b) {
-        return a.Equals(b);
+    void Assert::AreEqual(Vector2D a, Vector2D b) {
+        if (!a.Equals(b)) throw AssertException("AreEqual(Vector2D,Vector2D) failed!");
     }
 }
