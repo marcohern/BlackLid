@@ -19,6 +19,7 @@
 		A718EA8D1A8877DB0016CF14 /* content in Resources */ = {isa = PBXBuildFile; fileRef = A718EA8C1A8877DB0016CF14 /* content */; };
 		A718EA901A887ACF0016CF14 /* Create.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A718EA8E1A887ACF0016CF14 /* Create.cpp */; };
 		A718EA931A895D2A0016CF14 /* Fps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A718EA911A895D2A0016CF14 /* Fps.cpp */; };
+		A718EA961A89A7380016CF14 /* Vector2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A718EA941A89A7380016CF14 /* Vector2D.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,8 @@
 		A718EA8F1A887ACF0016CF14 /* Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Create.h; path = BlackLid/core/Create.h; sourceTree = "<group>"; };
 		A718EA911A895D2A0016CF14 /* Fps.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Fps.cpp; path = BlackLid/core/Fps.cpp; sourceTree = "<group>"; };
 		A718EA921A895D2A0016CF14 /* Fps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Fps.h; path = BlackLid/core/Fps.h; sourceTree = "<group>"; };
+		A718EA941A89A7380016CF14 /* Vector2D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Vector2D.cpp; path = BlackLid/core/Vector2D.cpp; sourceTree = "<group>"; };
+		A718EA951A89A7380016CF14 /* Vector2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vector2D.h; path = BlackLid/core/Vector2D.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,8 @@
 				A718EA8F1A887ACF0016CF14 /* Create.h */,
 				A718EA911A895D2A0016CF14 /* Fps.cpp */,
 				A718EA921A895D2A0016CF14 /* Fps.h */,
+				A718EA941A89A7380016CF14 /* Vector2D.cpp */,
+				A718EA951A89A7380016CF14 /* Vector2D.h */,
 			);
 			name = core;
 			sourceTree = "<group>";
@@ -211,6 +216,7 @@
 				A718EA711A87D03E0016CF14 /* GameException.cpp in Sources */,
 				A718EA761A87DD540016CF14 /* BlackLidEngine.cpp in Sources */,
 				A718EA831A87F4580016CF14 /* InputKeyMap.cpp in Sources */,
+				A718EA961A89A7380016CF14 /* Vector2D.cpp in Sources */,
 				A718EA901A887ACF0016CF14 /* Create.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

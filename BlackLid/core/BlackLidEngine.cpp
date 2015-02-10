@@ -22,7 +22,8 @@ namespace core {
         Engine::Setup();
         
         color = this->create->Color(50, 50, 255,255,255,255);
-        hgradient = this->create->HGradient(50,50, 0,0,0,255, 255,255,255,255);
+        hgradient = this->create->HGradient(50,50, 0,255,0,255, 255,0,0,255);
+        vgradient = this->create->VGradient(50,50, 255,0,0,255, 0,0,255,255);
     }
     
     void BlackLidEngine::Update(Uint32 dt) {
@@ -45,5 +46,8 @@ namespace core {
         
         r.x = 150;
         SDL_RenderCopy(renderer, this->hgradient, NULL, &r);
+        
+        r.x = 200;
+        SDL_RenderCopy(renderer, this->vgradient, NULL, &r);
     }
 }
