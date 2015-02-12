@@ -12,7 +12,7 @@
 #include <stdio.h>
 #include <SDL2/SDL.h>
 
-#define FPS_TPS 1000
+#include "define.h"
 
 namespace core {
     class Fps {

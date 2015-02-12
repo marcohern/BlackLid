@@ -26,11 +26,11 @@ namespace core {
     void Fps::Update(Uint32 dt) {
         this->dticks += dt;
         this->updated=false;
-        if (this->dticks > FPS_TPS) {
+        if (this->dticks > TPS) {
             printf("FPS: %d\n",this->frames);
             this->fps = this->frames;
             this->frames = 0;
-            this->dticks -= FPS_TPS;
+            this->dticks -= TPS;
             this->updated = true;
         }
     }

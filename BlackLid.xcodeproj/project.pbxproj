@@ -27,6 +27,8 @@
 		A718EAA51A89BC0D0016CF14 /* Vector2DTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A718EAA31A89BC0D0016CF14 /* Vector2DTest.cpp */; };
 		A718EAAB1A89C08E0016CF14 /* AssertException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A718EAA91A89C08E0016CF14 /* AssertException.cpp */; };
 		A718EAAE1A89CCA50016CF14 /* Matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A718EAAC1A89CCA50016CF14 /* Matrix.cpp */; };
+		A718EAB41A8B0C530016CF14 /* ForceField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A718EAB21A8B0C530016CF14 /* ForceField.cpp */; };
+		A718EAB71A8B0C710016CF14 /* Draw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A718EAB51A8B0C710016CF14 /* Draw.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +71,11 @@
 		A718EAAA1A89C08E0016CF14 /* AssertException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssertException.h; sourceTree = "<group>"; };
 		A718EAAC1A89CCA50016CF14 /* Matrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Matrix.cpp; path = BlackLid/core/Matrix.cpp; sourceTree = "<group>"; };
 		A718EAAD1A89CCA50016CF14 /* Matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Matrix.h; path = BlackLid/core/Matrix.h; sourceTree = "<group>"; };
+		A718EAB01A8AA00A0016CF14 /* define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = define.h; path = BlackLid/core/define.h; sourceTree = "<group>"; };
+		A718EAB21A8B0C530016CF14 /* ForceField.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ForceField.cpp; path = BlackLid/core/ForceField.cpp; sourceTree = "<group>"; };
+		A718EAB31A8B0C530016CF14 /* ForceField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ForceField.h; path = BlackLid/core/ForceField.h; sourceTree = "<group>"; };
+		A718EAB51A8B0C710016CF14 /* Draw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Draw.cpp; path = BlackLid/core/Draw.cpp; sourceTree = "<group>"; };
+		A718EAB61A8B0C710016CF14 /* Draw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Draw.h; path = BlackLid/core/Draw.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +158,11 @@
 				A718EAA01A89B9850016CF14 /* Test.h */,
 				A718EAAC1A89CCA50016CF14 /* Matrix.cpp */,
 				A718EAAD1A89CCA50016CF14 /* Matrix.h */,
+				A718EAB01A8AA00A0016CF14 /* define.h */,
+				A718EAB21A8B0C530016CF14 /* ForceField.cpp */,
+				A718EAB31A8B0C530016CF14 /* ForceField.h */,
+				A718EAB51A8B0C710016CF14 /* Draw.cpp */,
+				A718EAB61A8B0C710016CF14 /* Draw.h */,
 			);
 			name = core;
 			sourceTree = "<group>";
@@ -272,12 +284,14 @@
 				A718EA6A1A87CB8B0016CF14 /* Engine.cpp in Sources */,
 				A718EA801A87E7E50016CF14 /* InputCommand.cpp in Sources */,
 				A718EA791A87E5430016CF14 /* Camera.cpp in Sources */,
+				A718EAB71A8B0C710016CF14 /* Draw.cpp in Sources */,
 				A718EA711A87D03E0016CF14 /* GameException.cpp in Sources */,
 				A718EA9B1A89B3F40016CF14 /* Settings.cpp in Sources */,
 				A718EA761A87DD540016CF14 /* BlackLidEngine.cpp in Sources */,
 				A718EA831A87F4580016CF14 /* InputKeyMap.cpp in Sources */,
 				A718EA961A89A7380016CF14 /* Vector2D.cpp in Sources */,
 				A718EAA51A89BC0D0016CF14 /* Vector2DTest.cpp in Sources */,
+				A718EAB41A8B0C530016CF14 /* ForceField.cpp in Sources */,
 				A718EA901A887ACF0016CF14 /* Create.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,17 +11,26 @@
 namespace core{
     Camera::Camera(Engine *e) {
         this->e = e;
-        this->x=0;
-        this->y=0;
+        position.SetXY(0, 0);
     }
     
     Camera::~Camera() {
         this->e = NULL;
-        this->x=0;
-        this->y=0;
+        position.SetXY(0, 0);
     }
     
     void Camera::Update(Uint32 dt) {
+        float fdt, fx, fy;
+        InputCommand *input = this->e->GetInputCommandPlayer1();
         
+        fdt = (float)dt;
+        fx = position.GetX();
+        fy = position.GetY();
+        if (input->Up()) fy -= fdt;
+        if (input->Down()) fy += fdt;
+        if (input->Left()) fx -= fdt;
+        if (input->Right()) fx += fdt;
+        
+        position.SetXY(fx, fy);
     }
 }

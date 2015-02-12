@@ -38,4 +38,24 @@ namespace input{
         
         printf("d:%s f1:%s f2:%s\n", (up)?"^":(down)?"_":(left)?"<":(right)?">":".", (a)?"X":".", (b)?"X":".");
     }
+    
+    bool InputCommand::Up() { return up; }
+    bool InputCommand::Down() { return down; }
+    bool InputCommand::Left() { return left; }
+    bool InputCommand::Right() { return right; }
+    
+    bool InputCommand::A() { return a; }
+    bool InputCommand::B() { return b; }
+    bool InputCommand::X() { return x; }
+    bool InputCommand::Y() { return y; }
+    
+    bool InputCommand::L1() { return l1; }
+    bool InputCommand::L2() { return l2; }
+    bool InputCommand::L3() { return l3; }
+    bool InputCommand::R1() { return r1; }
+    bool InputCommand::R2() { return r2; }
+    bool InputCommand::R3() { return r3; }
+    
+    bool InputCommand::Select() { return select; }
+    bool InputCommand::Start() { return start; }
 }

@@ -16,8 +16,7 @@ namespace core {
     class Camera {
     private:
         Engine *e;
-        int x;
-        int y;
+        Vector2D position;
     public:
         Camera(Engine *e);
         ~Camera();

@@ -21,10 +21,10 @@ namespace core {
     void BlackLidEngine::Setup() {
         Engine::Setup();
         
-        color = this->create->Color(50, 50, 255,255,255,255);
-        hgradient = this->create->HGradient(50,50, 0,255,0,255, 255,0,0,0);
-        vgradient = this->create->VGradient(50,50, 255,0,0,255, 0,0,255,0);
-        rgradient = this->create->RGradient(25,25, 255,255,0,255, 255,255,0,0);
+        color = this->create->Color(64,64, 255,255,255,255);
+        hgradient = this->create->HGradient(64,64, 0,255,0,255, 255,0,0,0);
+        vgradient = this->create->VGradient(64,64, 255,0,0,255, 0,0,255,0);
+        rgradient = this->create->RGradient(64,64, 255,255,0,255, 255,255,0,0);
     }
     
     void BlackLidEngine::Update(Uint32 dt) {
@@ -33,26 +33,26 @@ namespace core {
     
     void BlackLidEngine::Draw(Uint32 dt) {
         SDL_Rect r;
-        r.w=50;
-        r.h=50;
-        r.x=50;
-        r.y=50;
+        r.w=64;
+        r.h=64;
+        r.x=32;
+        r.y=32;
         
         SDL_SetRenderDrawColor(renderer, 255, 0, 0, 64);
         
         SDL_RenderFillRect(renderer, &r);
         
-        r.x = 100;
-        SDL_RenderCopy(renderer, this->color, NULL, &r);
+        r.x += 64;
+        draw->Texture(this->color, &r);
         
-        r.x = 150;
-        SDL_RenderCopy(renderer, this->hgradient, NULL, &r);
+        r.x += 64;
+        draw->Texture(this->hgradient, &r);
         
-        r.x = 200;
-        SDL_RenderCopy(renderer, this->vgradient, NULL, &r);
+        r.x += 64;
+        draw->Texture(this->vgradient, &r);
         
-        r.x = 250;
-        SDL_RenderCopy(renderer, this->rgradient, NULL, &r);
+        r.x += 64;
+        draw->Texture(this->rgradient, &r);
 
     }
 }

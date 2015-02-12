@@ -17,6 +17,7 @@ namespace core {
         ticks = 0;
         
         this->create = new Create(this);
+        this->draw = new core::Draw(this);
     }
     
     Engine::~Engine() {
@@ -25,6 +26,9 @@ namespace core {
         this->screen = NULL;
         this->running = false;
         ticks = 0;
+        
+        this->create = NULL;
+        this->draw = NULL;
     }
     
     void Engine::Setup() {
@@ -95,5 +99,9 @@ namespace core {
     
     SDL_Renderer *Engine::GetRenderer() {
         return this->renderer;
+    }
+    
+    InputCommand *Engine::GetInputCommandPlayer1() {
+        return &this->player1;
     }
 }

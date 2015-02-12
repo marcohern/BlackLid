@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 Marco Hernandez. All rights reserved.
 //
 
+#include "../core/define.h"
 #include "Vector2DTest.h"
 
 using namespace core;
@@ -22,7 +23,9 @@ namespace tests {
         
         std::cout<<"Vector2DTest::"<<name;
         try {
+            Setup();
             (this->*method)();
+            TearDown();
             std::cout<<" OK!\n";
         } catch (AssertException ex) {
             std::cout<<" FAIL: "<<ex.what()<<"\n";
@@ -113,6 +116,14 @@ namespace tests {
         Assert::AreEqual(r,1.57079633f);//radians 1.5707rads = 90degs
     }
     
+    void Vector2DTest::Unit_Magnitude_Valid() {
+        Vector2D a(0.0f,1.0f);
+        
+        Vector2D u = a.Unit();
+        
+        Assert::AreEqual(u.GetM(),1.0f);
+    }
+    
     void Vector2DTest::Run() {
         Execute("Constructor_Empty_Valid-----", &Vector2DTest::Constructor_Empty_Valid);
         Execute("Constructor_NonEmpty_Valid--", &Vector2DTest::Constructor_NonEmpty_Valid);
@@ -123,5 +134,6 @@ namespace tests {
         Execute("Multiply_Rationals_Valid----", &Vector2DTest::Multiply_Rationals_Valid);
         Execute("Multiply_DotProduct_Valid---", &Vector2DTest::Multiply_DotProduct_Valid);
         Execute("GetAngleBetween_90deg_Valid-", &Vector2DTest::GetAngleBetween_90deg_Valid);
+        Execute("Unit_Magnitude_Valid--------", &Vector2DTest::Unit_Magnitude_Valid);
     }
 }

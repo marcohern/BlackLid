@@ -17,6 +17,7 @@
 #include "Settings.h"
 #include "GameException.h"
 #include "Create.h"
+#include "Draw.h"
 #include "Fps.h"
 #include "../input/InputCommand.h"
 
@@ -24,6 +25,7 @@ using namespace input;
 
 namespace core {
     class Create;
+    class Draw;
     
     class Engine {
     private:
@@ -36,6 +38,7 @@ namespace core {
         Uint32 ticks;
         SDL_Event e;
         Create *create;
+        Draw *draw;
         InputCommand player1, player2;
         Fps fps;
         
@@ -51,6 +54,7 @@ namespace core {
         void Quit();
         
         SDL_Renderer *GetRenderer();
+        InputCommand *GetInputCommandPlayer1();
     };
 }
 

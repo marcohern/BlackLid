@@ -34,6 +34,23 @@ namespace input {
         ~InputCommand();
         
         void Update(SDL_KeyboardEvent *e);
+        
+        bool Up();
+        bool Down();
+        bool Left();
+        bool Right();
+        bool A();
+        bool B();
+        bool X();
+        bool Y();
+        bool L1();
+        bool L2();
+        bool L3();
+        bool R1();
+        bool R2();
+        bool R3();
+        bool Select();
+        bool Start();
     };
 }
 #endif /* defined(__BlackLid__InputCommand__) */
