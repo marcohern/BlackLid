@@ -21,14 +21,14 @@ namespace core {
     void BlackLidEngine::Setup() {
         Engine::Setup();
         
-        color = this->create->Color(64,64, 255,255,255,255);
-        hgradient = this->create->HGradient(64,64, 0,255,0,255, 255,0,0,0);
-        vgradient = this->create->VGradient(64,64, 255,0,0,255, 0,0,255,0);
-        rgradient = this->create->RGradient(64,64, 255,255,0,255, 255,255,0,0);
+        color     = this->create->Color    (64,64, 255,255,255,255);
+        hgradient = this->create->HGradient(64,64, 000,255,000,255, 000,255,000,196);
+        vgradient = this->create->VGradient(64,64, 255,000,000,255, 000,000,255,000);
+        rgradient = this->create->RGradient(64,64, 255,255,000,255, 255,255,000,000);
     }
     
     void BlackLidEngine::Update(Uint32 dt) {
-
+        this->angle += 0.125*(double)dt;
     }
     
     void BlackLidEngine::Draw(Uint32 dt) {
@@ -37,22 +37,18 @@ namespace core {
         r.h=64;
         r.x=32;
         r.y=32;
+        SDL_Point p;p.x=32;p.y=32;
         
-        SDL_SetRenderDrawColor(renderer, 255, 0, 0, 64);
-        
-        SDL_RenderFillRect(renderer, &r);
-        
-        r.x += 64;
-        draw->Texture(this->color, &r);
+        draw->Texture(this->color, &r, this->angle, &p, SDL_FLIP_NONE);
         
         r.x += 64;
-        draw->Texture(this->hgradient, &r);
+        draw->Texture(this->hgradient, &r, this->angle, &p, SDL_FLIP_NONE);
         
         r.x += 64;
-        draw->Texture(this->vgradient, &r);
+        draw->Texture(this->vgradient, &r, this->angle, &p, SDL_FLIP_NONE);
         
         r.x += 64;
-        draw->Texture(this->rgradient, &r);
+        draw->Texture(this->rgradient, &r, this->angle, &p, SDL_FLIP_NONE);
 
     }
 }

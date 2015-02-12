@@ -17,4 +17,8 @@ namespace core {
     void Draw::Texture(SDL_Texture *t, SDL_Rect *r) {
         SDL_RenderCopy(this->e->GetRenderer(), t, NULL, r);
     }
+    
+    void Draw::Texture(SDL_Texture *t, SDL_Rect *r, double angle, SDL_Point *p, SDL_RendererFlip flip) {
+        SDL_RenderCopyEx(this->e->GetRenderer(), t, NULL, r, angle, p, flip);
+    }
 }
