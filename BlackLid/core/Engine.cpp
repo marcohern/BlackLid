@@ -43,7 +43,7 @@ namespace core {
             printf("SDL_Init success\n");
         }
         
-        this->window = SDL_CreateWindow("BlackLid", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 640, 480, SDL_WINDOW_SHOWN);
+        this->window = SDL_CreateWindow("BlackLid", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 1280, 720, SDL_WINDOW_SHOWN);
         if (this->window==NULL) {
             throw GameException("SDL_CreateWindow failed!");
         } else {
@@ -74,7 +74,7 @@ namespace core {
             
             dt = SDL_GetTicks() - this->ticks;
             
-            if (dt>0) {
+            //if (dt>0) {
                 fps.Update(dt);
                 this->Update(dt);
                 camera->Update(dt);
@@ -89,9 +89,13 @@ namespace core {
                 fps.Draw();
                 this->Draw(dt);
                 this->ticks = SDL_GetTicks();
-            }
+            //}
             
             SDL_RenderPresent(renderer);
+            /*
+            if (player1.Quit()) {
+                running = false;
+            }*/
         }
     }
     

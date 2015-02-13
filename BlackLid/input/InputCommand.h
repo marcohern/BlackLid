@@ -29,6 +29,8 @@ namespace input {
         //L & R joysticks
         int l3h, l3v, r3h, r3v;
         
+        bool quit;
+        
     public:
         InputCommand();
         ~InputCommand();
@@ -51,6 +53,7 @@ namespace input {
         bool R3();
         bool Select();
         bool Start();
+        bool Quit();
     };
 }
 #endif /* defined(__BlackLid__InputCommand__) */

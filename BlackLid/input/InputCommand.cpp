@@ -10,7 +10,7 @@
 
 namespace input{
     InputCommand::InputCommand() {
-        up = down = left = right = a = b = select = start = false;
+        up = down = left = right = a = b = select = start = quit = false;
     }
     
     InputCommand::~InputCommand() {
@@ -34,6 +34,7 @@ namespace input{
             case SDLK_s: b=press;break;
             case SDLK_RETURN: start=press;break;
             case SDLK_TAB: select=press;break;
+            case SDLK_ESCAPE: quit=press;break;
         }
         
         printf("d:%s f1:%s f2:%s\n", (up)?"^":(down)?"_":(left)?"<":(right)?">":".", (a)?"X":".", (b)?"X":".");
@@ -58,4 +59,6 @@ namespace input{
     
     bool InputCommand::Select() { return select; }
     bool InputCommand::Start() { return start; }
+    
+    bool InputCommand::Quit() { return quit; }
 }
