@@ -12,6 +12,7 @@ using namespace core;
 namespace cameras {
     
     ScrollCamera::ScrollCamera(Engine *e) : Camera(e) {
+        speed = 0.25f;
     }
     
     ScrollCamera::~ScrollCamera() {
@@ -24,10 +25,10 @@ namespace cameras {
         fdt = (float)dt;
         fx = position.GetX();
         fy = position.GetY();
-        if (input->Up()) fy -= fdt;
-        if (input->Down()) fy += fdt;
-        if (input->Left()) fx -= fdt;
-        if (input->Right()) fx += fdt;
+        if (input->Up()) fy -= fdt*speed;
+        if (input->Down()) fy += fdt*speed;
+        if (input->Left()) fx -= fdt*speed;
+        if (input->Right()) fx += fdt*speed;
         
         position.SetXY(fx, fy);
     }

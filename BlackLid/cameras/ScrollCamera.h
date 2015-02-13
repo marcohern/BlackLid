@@ -16,6 +16,8 @@ using namespace core;
 
 namespace cameras {
     class ScrollCamera: public Camera {
+    private:
+        float speed;
     public:
         ScrollCamera(Engine *e);
         virtual ~ScrollCamera();

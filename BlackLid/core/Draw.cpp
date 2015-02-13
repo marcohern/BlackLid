@@ -14,7 +14,7 @@ namespace core {
         this->e = e;
     }
     
-    void Draw::Texture(SDL_Texture *t, SDL_Rect *r) {
+    void Draw::Texture(SDL_Texture *t, const SDL_Rect *r) {
         SDL_Point p = this->e->GetCamera()->GetSdlPosition();
         SDL_Rect rr;
         rr.x=p.x+r->x;

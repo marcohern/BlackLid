@@ -21,7 +21,7 @@ namespace core {
         
     public:
         Draw(Engine *e);
-        void Texture(SDL_Texture *t, SDL_Rect *r);
+        void Texture(SDL_Texture *t, const SDL_Rect *r);
         void Texture(SDL_Texture *t, SDL_Rect *r, double angle, SDL_Point *p, SDL_RendererFlip flip);
     };
 }
