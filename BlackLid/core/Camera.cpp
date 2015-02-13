@@ -11,26 +11,22 @@
 namespace core{
     Camera::Camera(Engine *e) {
         this->e = e;
-        position.SetXY(0, 0);
+        position.SetXY(0.0, 0.0);
     }
     
     Camera::~Camera() {
         this->e = NULL;
-        position.SetXY(0, 0);
+        position.SetXY(0.0, 0.0);
     }
     
-    void Camera::Update(Uint32 dt) {
-        float fdt, fx, fy;
-        InputCommand *input = this->e->GetInputCommandPlayer1();
-        
-        fdt = (float)dt;
-        fx = position.GetX();
-        fy = position.GetY();
-        if (input->Up()) fy -= fdt;
-        if (input->Down()) fy += fdt;
-        if (input->Left()) fx -= fdt;
-        if (input->Right()) fx += fdt;
-        
-        position.SetXY(fx, fy);
+    SDL_Point Camera::GetSdlPosition() {
+        SDL_Point p;
+        p.x = position.GetX();
+        p.y = position.GetY();
+        return p;
+    }
+    
+    Vector2D Camera::GetPosition() {
+        return position;
     }
 }

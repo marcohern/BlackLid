@@ -29,6 +29,7 @@
 		A718EAAE1A89CCA50016CF14 /* Matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A718EAAC1A89CCA50016CF14 /* Matrix.cpp */; };
 		A718EAB41A8B0C530016CF14 /* ForceField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A718EAB21A8B0C530016CF14 /* ForceField.cpp */; };
 		A718EAB71A8B0C710016CF14 /* Draw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A718EAB51A8B0C710016CF14 /* Draw.cpp */; };
+		A797A12B1A8D88CB00B43CF9 /* ScrollCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A797A1291A8D88CB00B43CF9 /* ScrollCamera.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,8 @@
 		A718EAB31A8B0C530016CF14 /* ForceField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ForceField.h; path = BlackLid/core/ForceField.h; sourceTree = "<group>"; };
 		A718EAB51A8B0C710016CF14 /* Draw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Draw.cpp; path = BlackLid/core/Draw.cpp; sourceTree = "<group>"; };
 		A718EAB61A8B0C710016CF14 /* Draw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Draw.h; path = BlackLid/core/Draw.h; sourceTree = "<group>"; };
+		A797A1291A8D88CB00B43CF9 /* ScrollCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ScrollCamera.cpp; path = BlackLid/cameras/ScrollCamera.cpp; sourceTree = SOURCE_ROOT; };
+		A797A12A1A8D88CB00B43CF9 /* ScrollCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScrollCamera.h; path = BlackLid/cameras/ScrollCamera.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,7 @@
 		A718EA321A87CA380016CF14 = {
 			isa = PBXGroup;
 			children = (
+				A797A12C1A8D88D700B43CF9 /* cameras */,
 				A718EA3D1A87CA380016CF14 /* BlackLid */,
 				A718EA8C1A8877DB0016CF14 /* content */,
 				A718EA6B1A87CC3C0016CF14 /* core */,
@@ -206,6 +210,15 @@
 			path = BlackLid/exceptions;
 			sourceTree = "<group>";
 		};
+		A797A12C1A8D88D700B43CF9 /* cameras */ = {
+			isa = PBXGroup;
+			children = (
+				A797A1291A8D88CB00B43CF9 /* ScrollCamera.cpp */,
+				A797A12A1A8D88CB00B43CF9 /* ScrollCamera.h */,
+			);
+			name = cameras;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -275,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A797A12B1A8D88CB00B43CF9 /* ScrollCamera.cpp in Sources */,
 				A718EAAE1A89CCA50016CF14 /* Matrix.cpp in Sources */,
 				A718EA931A895D2A0016CF14 /* Fps.cpp in Sources */,
 				A718EAAB1A89C08E0016CF14 /* AssertException.cpp in Sources */,

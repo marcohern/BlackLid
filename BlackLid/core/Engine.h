@@ -14,9 +14,10 @@
 #include <exception>
 #include <SDL2/SDL.h>
 
-#include "Settings.h"
 #include "GameException.h"
+#include "Settings.h"
 #include "Create.h"
+#include "Camera.h"
 #include "Draw.h"
 #include "Fps.h"
 #include "../input/InputCommand.h"
@@ -24,6 +25,7 @@
 using namespace input;
 
 namespace core {
+    class Camera;
     class Create;
     class Draw;
     
@@ -41,6 +43,7 @@ namespace core {
         Draw *draw;
         InputCommand player1, player2;
         Fps fps;
+        Camera *camera;
         
         virtual void Update(Uint32 dt) = 0;
         virtual void Draw(Uint32 dt) = 0;
@@ -55,6 +58,7 @@ namespace core {
         
         SDL_Renderer *GetRenderer();
         InputCommand *GetInputCommandPlayer1();
+        Camera *GetCamera();
     };
 }
 

@@ -7,6 +7,9 @@
 //
 
 #include "Engine.h"
+#include "../cameras/ScrollCamera.h"
+
+using namespace cameras;
 
 namespace core {
     Engine::Engine() {
@@ -18,6 +21,7 @@ namespace core {
         
         this->create = new Create(this);
         this->draw = new core::Draw(this);
+        this->camera = new ScrollCamera(this);
     }
     
     Engine::~Engine() {
@@ -73,6 +77,7 @@ namespace core {
             if (dt>0) {
                 fps.Update(dt);
                 this->Update(dt);
+                camera->Update(dt);
                 
                 SDL_SetRenderDrawBlendMode(renderer, SDL_BLENDMODE_NONE);
                 SDL_SetRenderDrawColor( renderer, 0, 0, 0, 255 );
@@ -103,5 +108,9 @@ namespace core {
     
     InputCommand *Engine::GetInputCommandPlayer1() {
         return &this->player1;
+    }
+    
+    Camera *Engine::GetCamera() {
+        return this->camera;
     }
 }

@@ -13,15 +13,19 @@
 #include "Engine.h"
 
 namespace core {
+    class Engine;
+    
     class Camera {
-    private:
-        Engine *e;
+    protected:
         Vector2D position;
+        Engine *e;
     public:
         Camera(Engine *e);
-        ~Camera();
+        virtual ~Camera();
         
-        void Update(Uint32 dt);
+        virtual void Update(Uint32 dt) = 0;
+        Vector2D GetPosition();
+        SDL_Point GetSdlPosition();
     };
 }
 
