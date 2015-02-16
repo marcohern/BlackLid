@@ -9,28 +9,41 @@
 #include "Draw.h"
 
 namespace core {
+    SDL_Point Draw::_point;
+    SDL_Rect Draw::_rect;
     
     Draw::Draw(Engine *e) {
         this->e = e;
     }
     
     void Draw::Texture(SDL_Texture *t, const SDL_Rect *r) {
-        SDL_Point p = this->e->GetCamera()->GetSdlPosition();
-        SDL_Rect rr;
-        rr.x=p.x+r->x;
-        rr.y=p.y+r->y;
-        rr.w=r->w;
-        rr.h=r->h;
-        SDL_RenderCopy(this->e->GetRenderer(), t, NULL, &rr);
+        _point = this->e->GetCamera()->GetSdlPosition();
+        _rect.x=_point.x+r->x;
+        _rect.y=_point.y+r->y;
+        _rect.w=r->w;
+        _rect.h=r->h;
+        SDL_RenderCopy(this->e->GetRenderer(), t, NULL, &_rect);
     }
     
     void Draw::Texture(SDL_Texture *t, SDL_Rect *r, double angle, SDL_Point *p, SDL_RendererFlip flip) {
-        SDL_Point px = this->e->GetCamera()->GetSdlPosition();
-        SDL_Rect rr;
-        rr.x=px.x+r->x;
-        rr.y=px.y+r->y;
-        rr.w=r->w;
-        rr.h=r->h;
-        SDL_RenderCopyEx(this->e->GetRenderer(), t, NULL, &rr, angle, p, flip);
+        _point = this->e->GetCamera()->GetSdlPosition();
+        _rect.x=_point.x+r->x;
+        _rect.y=_point.y+r->y;
+        _rect.w=r->w;
+        _rect.h=r->h;
+        SDL_RenderCopyEx(this->e->GetRenderer(), t, NULL, &_rect, angle, p, flip);
+    }
+    
+    void Draw::Crosshair( int x, int y) {
+        _point = this->e->GetCamera()->GetSdlPosition();
+        _point.x+=x;
+        _point.y+=y;
+        SDL_SetRenderDrawColor(this->e->GetRenderer(), 255, 0, 0, 255);
+        SDL_RenderDrawLine(this->e->GetRenderer(), _point.x-10, _point.y, _point.x+10, _point.y);
+        SDL_RenderDrawLine(this->e->GetRenderer(), _point.x, _point.y-10, _point.x, _point.y+10);
+    }
+    
+    void Draw::Crosshair(const Vector2D *pos) {
+        return this->Crosshair(pos->GetX(), pos->GetY());
     }
 }

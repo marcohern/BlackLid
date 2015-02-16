@@ -17,6 +17,7 @@ namespace  core {
         static Settings *instance;
         
         std::string path;
+        bool drawReferences;
         Settings();
     public:
         static Settings *GetInstance();
@@ -24,6 +25,8 @@ namespace  core {
         void SetPath(std::string path);
         void SetPath(char *path);
         std::string GetPath();
+        
+        bool DrawReferences();
     };
 }
 #endif /* defined(__BlackLid__Settings__) */

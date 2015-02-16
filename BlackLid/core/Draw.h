@@ -18,11 +18,16 @@ namespace core {
     class Draw {
     private:
         Engine *e;
+        static SDL_Point _point;
+        static SDL_Rect _rect;
         
     public:
         Draw(Engine *e);
         void Texture(SDL_Texture *t, const SDL_Rect *r);
         void Texture(SDL_Texture *t, SDL_Rect *r, double angle, SDL_Point *p, SDL_RendererFlip flip);
+        
+        void Crosshair(int x, int y);
+        void Crosshair(const Vector2D *pos);
     };
 }
 #endif /* defined(__BlackLid__Draw__) */

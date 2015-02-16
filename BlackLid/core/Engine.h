@@ -21,8 +21,13 @@
 #include "Draw.h"
 #include "Fps.h"
 #include "../input/InputCommand.h"
+#include "../objects/Placeable.h"
 
 using namespace input;
+
+namespace objects {
+    class Placeable;
+}
 
 namespace core {
     class Camera;
@@ -59,6 +64,7 @@ namespace core {
         SDL_Renderer *GetRenderer();
         InputCommand *GetInputCommandPlayer1();
         Camera *GetCamera();
+        class Draw *GetDraw();
     };
 }
 

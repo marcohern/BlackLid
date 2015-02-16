@@ -25,6 +25,7 @@ namespace core {
         hgradient = this->create->HGradient(128,128, 000,255,000,255, 000,255,000,196);
         vgradient = this->create->VGradient(128,128, 255,000,000,255, 000,000,255,000);
         rgradient = this->create->RGradient(128,128, 255,255,000,255, 255,255,000,000);
+        placeable = new objects::Placeable(this);
     }
     
     void BlackLidEngine::Update(Uint32 dt) {

@@ -70,7 +70,7 @@ namespace tests {
         Vector2D a(34.12f,72.67f);
         Vector2D b(17.51f,39.65f);
         
-        a.Add(b);
+        a.Add(&b);
         
         Assert::AreEqual(a.GetX(), 51.63f);
         Assert::AreEqual(a.GetY(),112.32f);
@@ -80,7 +80,7 @@ namespace tests {
         Vector2D a(34.12f,72.67f);
         Vector2D b(17.51f,39.65f);
         
-        a.Subtract(b);
+        a.Subtract(&b);
         
         Assert::AreEqual(a.GetX(), 16.61f);
         Assert::AreEqual(a.GetY(), 33.02f);

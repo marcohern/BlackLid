@@ -59,11 +59,14 @@ namespace core {
     }
     
     void Engine::Run() {
-        Uint32 dt;
+        Uint32 dt, pticks;
         this->running=true;
         
         ticks = SDL_GetTicks();
+        pticks = ticks;
         while(running) {
+            dt = this->ticks - pticks;
+            
             while(SDL_PollEvent(&e)!=0) {
                 if (e.type == SDL_QUIT) {
                     running = false;
@@ -72,30 +75,25 @@ namespace core {
                 }
             }
             
-            dt = SDL_GetTicks() - this->ticks;
             
-            //if (dt>0) {
-                fps.Update(dt);
-                this->Update(dt);
-                camera->Update(dt);
-                
-                SDL_SetRenderDrawBlendMode(renderer, SDL_BLENDMODE_NONE);
-                SDL_SetRenderDrawColor( renderer, 0, 0, 0, 255 );
-                SDL_SetRenderTarget( renderer, NULL);
-                SDL_RenderClear( renderer );
-                SDL_RenderFillRect(renderer, NULL);
-                SDL_SetRenderDrawBlendMode(renderer, SDL_BLENDMODE_BLEND);
-                
-                fps.Draw();
-                this->Draw(dt);
-                this->ticks = SDL_GetTicks();
-            //}
+            fps.Update(dt);
+            this->Update(dt);
+            camera->Update(dt);
+            
+            SDL_SetRenderDrawBlendMode(renderer, SDL_BLENDMODE_NONE);
+            SDL_SetRenderDrawColor( renderer, 0, 0, 0, 255 );
+            SDL_SetRenderTarget( renderer, NULL);
+            SDL_RenderClear( renderer );
+            SDL_RenderFillRect(renderer, NULL);
+            SDL_SetRenderDrawBlendMode(renderer, SDL_BLENDMODE_BLEND);
+            
+            fps.Draw();
+            this->Draw(dt);
             
             SDL_RenderPresent(renderer);
-            /*
-            if (player1.Quit()) {
-                running = false;
-            }*/
+            
+            pticks = this->ticks;
+            this->ticks = SDL_GetTicks();
         }
     }
     
@@ -116,5 +114,8 @@ namespace core {
     
     Camera *Engine::GetCamera() {
         return this->camera;
+    }
+    Draw *Engine::GetDraw() {
+        return this->draw;
     }
 }

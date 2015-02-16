@@ -19,6 +19,7 @@ namespace core{
     
     Settings::Settings() {
         this->path = "";
+        drawReferences = true;
     }
     
     void Settings::SetPath(std::string path){
@@ -31,6 +32,10 @@ namespace core{
     
     std::string Settings::GetPath() {
         return this->path;
+    }
+    
+    bool Settings::DrawReferences() {
+        return this->drawReferences;
     }
     
     Settings *Settings::instance = NULL;

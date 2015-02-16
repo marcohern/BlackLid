@@ -115,7 +115,7 @@ namespace core {
                 rect.x=j;
                 rect.y=i;
                 v.SetXY(j,i);
-                v.Subtract(c);
+                v.Subtract(&c);
                 vr = v.GetM()/radius;
                 if (vr < 1.0f) {
                     dr = vr*fr2+(1.0f - vr)*fr1;

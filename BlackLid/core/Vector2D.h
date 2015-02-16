@@ -28,8 +28,10 @@ namespace core {
         float GetY() const;
         float GetM();
         
-        void Add(Vector2D v);
-        void Subtract(Vector2D v);
+        void Add(const Vector2D *v);
+        void AddX(float dx);
+        void AddY(float dy);
+        void Subtract(const Vector2D *v);
         void Multiply(float s);
         float Multiply(Vector2D v);
         float GetAngleBetween(Vector2D v);

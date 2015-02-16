@@ -47,14 +47,22 @@ namespace core {
         return sqrt(this->y*this->y + this->x*this->x);
     }
     
-    void Vector2D::Add(Vector2D v){
-        this->x+=v.x;
-        this->y+=v.y;
+    void Vector2D::Add(const Vector2D *v){
+        this->x+=v->x;
+        this->y+=v->y;
     }
     
-    void Vector2D::Subtract(Vector2D v) {
-        this->x-=v.x;
-        this->y-=v.y;
+    void Vector2D::AddX(float dx) {
+        this->x+=dx;
+    }
+    
+    void Vector2D::AddY(float dy) {
+        this->y+=dy;
+    }
+    
+    void Vector2D::Subtract(const Vector2D *v) {
+        this->x-=v->x;
+        this->y-=v->y;
     }
     
     void Vector2D::Multiply(float s){

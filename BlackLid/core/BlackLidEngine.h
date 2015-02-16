@@ -20,6 +20,8 @@ namespace core {
         SDL_Texture *hgradient;
         SDL_Texture *vgradient;
         SDL_Texture *rgradient;
+        
+        objects::Placeable *placeable;
         double angle;
     protected:
         virtual void Update(Uint32 dt);
