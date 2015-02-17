@@ -46,6 +46,11 @@ namespace objects {
         this->position.SetXY(x, y);
     }
     
+    void Placeable::SetXY(const Vector2D *v) {
+        this->position.SetX(v->GetX());
+        this->position.SetY(v->GetY());
+    }
+    
     void Placeable::AddX(float dx){
         this->position.AddX(dx);
     }
@@ -57,5 +62,9 @@ namespace objects {
     void Placeable::AddXY(float dx, float dy) {
         this->_p.SetXY(dx, dy);
         this->position.Add(&_p);
+    }
+    
+    void Placeable::AddXY(const Vector2D *v) {
+        this->position.Add(v);
     }
 }

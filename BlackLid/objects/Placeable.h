@@ -17,6 +17,10 @@
 
 using namespace core;
 
+namespace core {
+    class Engine;
+    class Vector2D;
+}
 namespace objects {
     class Placeable {
     protected:
@@ -35,9 +39,11 @@ namespace objects {
         void SetX(float x);
         void SetY(float y);
         void SetXY(float x, float y);
+        void SetXY(const Vector2D *v);
         void AddX(float dx);
         void AddY(float dy);
         void AddXY(float dx, float dy);
+        void AddXY(const Vector2D *v);
         
     };
 }
