@@ -7,3 +7,17 @@
 //
 
 #include "Drawable.h"
+
+namespace objects{
+    Drawable::Drawable(core::Engine *e):Placeable(e) {
+        this->e = e;
+    }
+    
+    Drawable::~Drawable() {
+        
+    }
+    
+    void Drawable::Draw(Uint32 dt){
+        
+    }
+}

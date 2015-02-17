@@ -26,6 +26,7 @@ namespace core {
         vgradient = this->create->VGradient(128,128, 255,000,000,255, 000,000,255,000);
         rgradient = this->create->RGradient(128,128, 255,255,000,255, 255,255,000,000);
         placeable = new objects::Placeable(this);
+        placeable->SetXY(230, 240);
     }
     
     void BlackLidEngine::Update(Uint32 dt) {
@@ -50,6 +51,8 @@ namespace core {
         
         r.x += 64;
         draw->Texture(this->rgradient, &r, 0.0, &p, SDL_FLIP_NONE);
+        
+        placeable->Draw(dt);
 
     }
 }

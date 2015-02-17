@@ -20,10 +20,10 @@ namespace objects {
         SDL_Rect rect;
         SDL_Texture *texture;
     public:
-        Drawable(SDL_Texture *texture, SDL_Rect *rect);
+        Drawable(core::Engine *e);
         virtual ~Drawable();
         
-        virtual void Draw(Uint32 dt) = 0;
+        void Draw(Uint32 dt);
     };
 }
 #endif /* defined(__BlackLid__Drawable__) */
