@@ -9,9 +9,6 @@
 #ifndef __BlackLid__Vector2D__
 #define __BlackLid__Vector2D__
 
-#include <stdio.h>
-#include <math.h>
-
 namespace core {
     class Vector2D {
     private:

@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 Marco Hernandez. All rights reserved.
 //
 
+#include <stdio.h>
+#include <string>
 #include "Settings.h"
 
 namespace core{

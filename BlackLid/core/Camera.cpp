@@ -6,6 +6,14 @@
 //  Copyright (c) 2015 Marco Hernandez. All rights reserved.
 //
 
+#include <stdio.h>
+#include <SDL2/SDL.h>
+
+#include "Fps.h"
+#include "../input/InputCommand.h"
+#include "Engine.h"
+#include "Vector2D.h"
+
 #include "Camera.h"
 
 namespace core{

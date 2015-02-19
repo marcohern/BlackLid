@@ -6,6 +6,12 @@
 //  Copyright (c) 2015 Marco Hernandez. All rights reserved.
 //
 
+#include <stdio.h>
+#include <string>
+#include "../input/InputCommand.h"
+#include "../core/Vector2D.h"
+#include "../core/Fps.h"
+#include "../core/Draw.h"
 #include "Placeable.h"
 
 using namespace core;

@@ -5,7 +5,9 @@
 //  Created by Marco Hernandez on 10/02/15.
 //  Copyright (c) 2015 Marco Hernandez. All rights reserved.
 //
-
+#include <stdio.h>
+#include <sstream>
+#include "Vector2D.h"
 #include "Matrix.h"
 
 namespace core {

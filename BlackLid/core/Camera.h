@@ -9,9 +9,6 @@
 #ifndef __BlackLid__Camera__
 #define __BlackLid__Camera__
 
-#include <stdio.h>
-#include "Engine.h"
-
 namespace core {
     class Engine;
     

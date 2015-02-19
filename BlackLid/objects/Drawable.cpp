@@ -6,6 +6,12 @@
 //  Copyright (c) 2015 Marco Hernandez. All rights reserved.
 //
 
+#include <stdio.h>
+#include <iostream>
+#include <SDL2/SDL.h>
+#include "../input/InputCommand.h"
+#include "Fps.h"
+#include "Placeable.h"
 #include "Drawable.h"
 
 namespace objects{

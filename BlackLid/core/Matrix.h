@@ -9,10 +9,6 @@
 #ifndef __BlackLid__Matrix__
 #define __BlackLid__Matrix__
 
-#include <stdio.h>
-#include <sstream>
-#include "Vector2D.h"
-
 namespace core{
     class Matrix {
     private:

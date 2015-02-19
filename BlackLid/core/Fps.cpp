@@ -6,6 +6,10 @@
 //  Copyright (c) 2015 Marco Hernandez. All rights reserved.
 //
 
+#include <stdio.h>
+#include <SDL2/SDL.h>
+
+#include "define.h"
 #include "Fps.h"
 
 namespace core {

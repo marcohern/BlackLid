@@ -9,9 +9,6 @@
 #ifndef __BlackLid__Draw__
 #define __BlackLid__Draw__
 
-#include <stdio.h>
-#include "Engine.h"
-
 namespace core {
     class Engine;
     

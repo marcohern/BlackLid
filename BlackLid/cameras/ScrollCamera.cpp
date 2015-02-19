@@ -6,7 +6,15 @@
 //  Copyright (c) 2015 Marco Hernandez. All rights reserved.
 //
 
+#include <stdio.h>
+#include <SDL2/SDL.h>
+#include "../core/Vector2D.h"
+#include "../input/InputCommand.h"
+#include "../core/Fps.h"
+#include "../core/Engine.h"
+#include "../core/Camera.h"
 #include "ScrollCamera.h"
+
 using namespace core;
 
 namespace cameras {

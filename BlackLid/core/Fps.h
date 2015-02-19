@@ -9,11 +9,6 @@
 #ifndef __BlackLid__Fps__
 #define __BlackLid__Fps__
 
-#include <stdio.h>
-#include <SDL2/SDL.h>
-
-#include "define.h"
-
 namespace core {
     class Fps {
     private:

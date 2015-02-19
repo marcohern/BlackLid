@@ -9,8 +9,7 @@
 #ifndef __BlackLid__Settings__
 #define __BlackLid__Settings__
 
-#include <stdio.h>
-#include <string>
+
 namespace  core {
     class Settings {
     private:

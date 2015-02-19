@@ -6,6 +6,10 @@
 //  Copyright (c) 2015 Marco Hernandez. All rights reserved.
 //
 
+#include <stdio.h>
+#include <iostream>
+#include <exception>
+#include "../core/GameException.h"
 #include "AssertException.h"
 
 namespace exceptions {

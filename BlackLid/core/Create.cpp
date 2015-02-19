@@ -6,6 +6,13 @@
 //  Copyright (c) 2015 Marco Hernandez. All rights reserved.
 //
 
+#include <stdio.h>
+#include <SDL2/SDL.h>
+
+#include "Vector2D.h"
+#include "../input/InputCommand.h"
+#include "Fps.h"
+#include "Engine.h"
 #include "Create.h"
 
 #define MAX(x,y) (x>y)?x:y

@@ -6,9 +6,24 @@
 //  Copyright (c) 2015 Marco Hernandez. All rights reserved.
 //
 
-#include "Engine.h"
-#include "../cameras/ScrollCamera.h"
+#include <stdio.h>
+#include <iostream>
+#include <exception>
+#include <SDL2/SDL.h>
 
+#include "Vector2D.h"
+#include "GameException.h"
+#include "Settings.h"
+#include "Create.h"
+#include "Camera.h"
+#include "Draw.h"
+#include "Fps.h"
+#include "../input/InputCommand.h"
+#include "../objects/Placeable.h"
+#include "../cameras/ScrollCamera.h"
+#include "Engine.h"
+
+using namespace input;
 using namespace cameras;
 
 namespace core {

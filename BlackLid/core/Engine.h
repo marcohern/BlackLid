@@ -9,20 +9,6 @@
 #ifndef __BlackLid__Engine__
 #define __BlackLid__Engine__
 
-#include <stdio.h>
-#include <iostream>
-#include <exception>
-#include <SDL2/SDL.h>
-
-#include "GameException.h"
-#include "Settings.h"
-#include "Create.h"
-#include "Camera.h"
-#include "Draw.h"
-#include "Fps.h"
-#include "../input/InputCommand.h"
-#include "../objects/Placeable.h"
-
 using namespace input;
 
 namespace objects {

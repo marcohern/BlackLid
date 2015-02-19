@@ -5,6 +5,14 @@
 //  Created by Marco Hernandez on 9/02/15.
 //  Copyright (c) 2015 Marco Hernandez. All rights reserved.
 //
+#include <stdio.h>
+#include <string>
+#include <iostream>
+#include <sstream>
+#include "Vector2D.h"
+
+#include "GameException.h"
+#include "../exceptions/AssertException.h"
 
 #include "Assert.h"
 

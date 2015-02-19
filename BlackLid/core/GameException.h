@@ -9,9 +9,6 @@
 #ifndef __BlackLid__GameException__
 #define __BlackLid__GameException__
 
-#include <stdio.h>
-#include <iostream>
-#include <exception>
 
 namespace core {
     class GameException: public std::exception {

@@ -9,8 +9,6 @@
 #ifndef __BlackLid__ScrollCamera__
 #define __BlackLid__ScrollCamera__
 
-#include <stdio.h>
-#include "../core/Camera.h"
 
 using namespace core;
 

@@ -6,6 +6,17 @@
 //  Copyright (c) 2015 Marco Hernandez. All rights reserved.
 //
 
+#include <stdio.h>
+#include <SDL2/SDL.h>
+#include <string>
+
+#include "Create.h"
+#include "Vector2D.h"
+#include "Draw.h"
+#include "Fps.h"
+#include "../input/InputCommand.h"
+#include "Engine.h"
+#include "../objects/Placeable.h"
 #include "BlackLidEngine.h"
 
 namespace core {

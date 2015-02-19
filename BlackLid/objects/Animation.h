@@ -9,9 +9,6 @@
 #ifndef __BlackLid__Animation__
 #define __BlackLid__Animation__
 
-#include <stdio.h>
-#include "Drawable.h"
-
 using namespace core;
 namespace objects {
     class Animation:public Drawable {

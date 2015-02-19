@@ -9,12 +9,6 @@
 #ifndef __BlackLid__Create__
 #define __BlackLid__Create__
 
-#include <stdio.h>
-#include <SDL2/SDL.h>
-
-#include "Vector2D.h"
-#include "Engine.h"
-
 #define CREATE_FLAGS SDL_TEXTUREACCESS_STATIC|SDL_TEXTUREACCESS_TARGET
 
 namespace core {

@@ -9,8 +9,6 @@
 #ifndef __BlackLid__Drawable__
 #define __BlackLid__Drawable__
 
-#include <stdio.h>
-#include "Placeable.h"
 
 namespace objects {
     class Drawable: public Placeable {

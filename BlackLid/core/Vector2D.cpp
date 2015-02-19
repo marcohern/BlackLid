@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 Marco Hernandez. All rights reserved.
 //
 
+#include <stdio.h>
+#include <math.h>
 #include "Vector2D.h"
 
 namespace core {

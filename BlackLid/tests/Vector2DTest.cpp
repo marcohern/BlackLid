@@ -5,8 +5,15 @@
 //  Created by Marco Hernandez on 9/02/15.
 //  Copyright (c) 2015 Marco Hernandez. All rights reserved.
 //
+#include <stdio.h>
+#include <iostream>
+
+#include "../core/GameException.h"
+#include "../exceptions/AssertException.h"
 
 #include "../core/define.h"
+#include "../core/Vector2D.h"
+#include "../core/List.h"
 #include "Vector2DTest.h"
 
 using namespace core;

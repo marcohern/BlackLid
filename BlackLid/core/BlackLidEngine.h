@@ -9,9 +9,6 @@
 #ifndef __BlackLid__BlackLidEngine__
 #define __BlackLid__BlackLidEngine__
 
-#include <stdio.h>
-#include "Engine.h"
-
 namespace core {
     class BlackLidEngine: public Engine {
     private:

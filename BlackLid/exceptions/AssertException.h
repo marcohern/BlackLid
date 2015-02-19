@@ -9,9 +9,6 @@
 #ifndef __BlackLid__AssertException__
 #define __BlackLid__AssertException__
 
-#include <stdio.h>
-#include "../core/GameException.h"
-
 namespace exceptions {
     class AssertException: public core::GameException {
     public:

@@ -5,7 +5,13 @@
 //  Created by Marco Hernandez on 10/02/15.
 //  Copyright (c) 2015 Marco Hernandez. All rights reserved.
 //
-
+#include <stdio.h>
+#include <SDL2/SDL.h>
+#include "Vector2D.h"
+#include "Fps.h"
+#include "Camera.h"
+#include "../input/InputCommand.h"
+#include "Engine.h"
 #include "Draw.h"
 
 namespace core {

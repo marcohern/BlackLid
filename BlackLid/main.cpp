@@ -7,8 +7,17 @@
 //
 
 #include <stdio.h>
+#include <string>
 
+#include "core/Settings.h"
+#include "core/GameException.h"
+
+#include "core/List.h"
+#include "input/InputCommand.h"
+#include "core/Fps.h"
+#include "core/Engine.h"
 #include "core/BlackLidEngine.h"
+#include "core/Vector2D.h"
 
 #include "core/Test.h"
 #include "tests/Vector2DTest.h"
