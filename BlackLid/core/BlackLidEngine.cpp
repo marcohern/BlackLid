@@ -8,15 +8,20 @@
 
 #include <stdio.h>
 #include <SDL2/SDL.h>
+#include <SDL2_image/SDL_image.h>
 #include <string>
 
+#include "Settings.h"
 #include "Create.h"
 #include "Vector2D.h"
 #include "Draw.h"
+
+#include "../objects/Placeable.h"
+#include "../objects/Drawable.h"
+
 #include "Fps.h"
 #include "../input/InputCommand.h"
 #include "Engine.h"
-#include "../objects/Placeable.h"
 #include "BlackLidEngine.h"
 
 namespace core {
@@ -36,8 +41,18 @@ namespace core {
         hgradient = this->create->HGradient(128,128, 000,255,000,255, 000,255,000,196);
         vgradient = this->create->VGradient(128,128, 255,000,000,255, 000,000,255,000);
         rgradient = this->create->RGradient(128,128, 255,255,000,255, 255,255,000,000);
+        
         placeable = new objects::Placeable(this);
         placeable->SetXY(230, 240);
+        
+        std::string path = Settings::GetInstance()->GetResource("/test/spaceship.png");
+        drawabletex = IMG_LoadTexture(this->renderer, path.c_str());
+        drawable = new objects::Drawable(this);
+        drawable->SetXY(260, 240);
+        drawable->SetTexture(drawabletex);
+        drawable->SetRect(0,0,96,96);
+        
+        
     }
     
     void BlackLidEngine::Update(Uint32 dt) {
@@ -64,6 +79,7 @@ namespace core {
         draw->Texture(this->rgradient, &r, 0.0, &p, SDL_FLIP_NONE);
         
         placeable->Draw(dt);
+        drawable->Draw(dt);
 
     }
 }

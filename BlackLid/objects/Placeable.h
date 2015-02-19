@@ -9,11 +9,6 @@
 #ifndef __BlackLid__Placeable__
 #define __BlackLid__Placeable__
 
-#include <stdio.h>
-#include <SDL2/SDL.h>
-#include "../core/Engine.h"
-#include "../core/Vector2D.h"
-#include "../core/Settings.h"
 
 using namespace core;
 
@@ -23,6 +18,8 @@ namespace core {
 }
 namespace objects {
     class Placeable {
+    private:
+        
     protected:
         static SDL_Point _point;
         static Vector2D _p;
@@ -30,6 +27,7 @@ namespace objects {
         Engine *e;
         Vector2D position;
         float speed;
+        
     public:
         Placeable(Engine *e);
         virtual ~Placeable();

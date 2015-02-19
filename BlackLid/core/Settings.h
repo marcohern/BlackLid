@@ -22,8 +22,11 @@ namespace  core {
         static Settings *GetInstance();
         
         void SetPath(std::string path);
-        void SetPath(char *path);
+        void SetPath(const char *path);
+        void SetPathBase(const char *path);
+        void SetPathBase(std::string path);
         std::string GetPath();
+        std::string GetResource(const char* path);
         
         bool DrawReferences();
     };

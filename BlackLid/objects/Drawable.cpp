@@ -7,23 +7,109 @@
 //
 
 #include <stdio.h>
-#include <iostream>
 #include <SDL2/SDL.h>
+#include <string>
+
 #include "../input/InputCommand.h"
-#include "Fps.h"
+#include "../core/Fps.h"
+#include "../core/Engine.h"
+#include "../core/Vector2D.h"
+#include "../core/Settings.h"
+#include "../core/Fps.h"
+#include "../core/Draw.h"
 #include "Placeable.h"
+
 #include "Drawable.h"
 
 namespace objects{
+    SDL_Rect Drawable::_rect;
+    SDL_Point Drawable::_pivot;
+    
     Drawable::Drawable(core::Engine *e):Placeable(e) {
         this->e = e;
+        this->texture = NULL;
+        this->pivot.SetXY(0.0, 0.0);
+        this->angle = 0.0;
+        this->flip = SDL_FLIP_NONE;
     }
     
     Drawable::~Drawable() {
-        
+        this->e = NULL;
+        this->texture = NULL;
+        this->pivot.SetXY(0.0, 0.0);
+        this->angle = 0.0;
+        this->flip = SDL_FLIP_NONE;
     }
     
-    void Drawable::Draw(Uint32 dt){
-        
+    
+    void Drawable::Update(Uint32 dt) {
+        Placeable::Update(dt);
+    }
+    
+    void Drawable::Draw(Uint32 dt) {
+        if (Settings::GetInstance()->DrawReferences()) {
+            _pivot.x = pivot.GetX();
+            _pivot.y = pivot.GetY();
+            _rect.x = position.GetX();
+            _rect.y = position.GetY();
+            _rect.w = this->rect.w;
+            _rect.h = this->rect.h;
+            this->e->GetDraw()->Texture(this->texture, &this->rect, &_rect, this->angle, &_pivot, this->flip);
+        }
+        Placeable::Draw(dt);
+    }
+    
+    void Drawable::SetTexture(SDL_Texture *t) {
+        this->texture = t;
+    }
+    
+    void Drawable::SetRect(const SDL_Rect *r) {
+        this->rect.x = r->x;
+        this->rect.y = r->y;
+        this->rect.w = r->w;
+        this->rect.h = r->h;
+    }
+    
+    void Drawable::SetRect(int x, int y, int w, int h) {
+        this->rect.x = x;
+        this->rect.y = y;
+        this->rect.w = w;
+        this->rect.h = h;
+    }
+    
+    void Drawable::SetRectX(int x) {
+        this->rect.x = x;
+    }
+    
+    void Drawable::SetRectY(int y) {
+        this->rect.y = y;
+    }
+    
+    void Drawable::SetRectXY(int x, int y) {
+        this->rect.x = x;
+        this->rect.y = y;
+    }
+    
+    void Drawable::SetRectWH(int w, int h) {
+        this->rect.w = w;
+        this->rect.h = h;
+    }
+    
+    void Drawable::AddRectX(int dx) {
+        this->rect.x += dx;
+    }
+    
+    void Drawable::AddRectY(int dy) {
+        this->rect.y += dy;
+    }
+    
+    void Drawable::AddRectXY(int dx, int dy) {
+        this->rect.x += dx;
+        this->rect.y += dy;
+    }
+    
+    void Drawable::AddRectXY(const core::Vector2D *v) {
+        this->rect.x += v->GetX();
+        this->rect.y += v->GetY();
     }
 }

@@ -21,7 +21,8 @@ namespace core {
     public:
         Draw(Engine *e);
         void Texture(SDL_Texture *t, const SDL_Rect *r);
-        void Texture(SDL_Texture *t, SDL_Rect *r, double angle, SDL_Point *p, SDL_RendererFlip flip);
+        void Texture(SDL_Texture *t, const SDL_Rect *r, const double angle,  const SDL_Point *p,  const SDL_RendererFlip flip);
+        void Texture(SDL_Texture *t, const SDL_Rect *s, const SDL_Rect *r, const double angle,  const SDL_Point *p,  const SDL_RendererFlip flip);
         
         void Crosshair(int x, int y);
         void Crosshair(const Vector2D *pos);

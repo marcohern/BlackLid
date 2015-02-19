@@ -19,6 +19,8 @@ namespace core {
         SDL_Texture *rgradient;
         
         objects::Placeable *placeable;
+        objects::Drawable *drawable;
+        SDL_Texture *drawabletex;
         double angle;
     protected:
         virtual void Update(Uint32 dt);
