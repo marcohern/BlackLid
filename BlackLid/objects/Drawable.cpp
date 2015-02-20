@@ -26,7 +26,6 @@ namespace objects{
     SDL_Point Drawable::_pivot;
     
     Drawable::Drawable(core::Engine *e):Placeable(e) {
-        this->e = e;
         this->texture = NULL;
         this->pivot.SetXY(0.0, 0.0);
         this->angle = 0.0;

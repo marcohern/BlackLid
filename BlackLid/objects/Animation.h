@@ -13,12 +13,20 @@ using namespace core;
 namespace objects {
     class Animation:public Drawable {
     protected:
+        int dx, dy;
+        int tpf;
+        Uint32 ticks;
     public:
-        Animation(SDL_Texture *texture, SDL_Rect rect);
+        Animation(Engine *e);
         virtual  ~Animation();
         
-        virtual void Update(Uint32 dt) = 0;
-        virtual void Draw(Uint32 dt) = 0;
+        void Update(Uint32 dt);
+        void Draw(Uint32 dt);
+        
+        void SetTpf(int tpf);
+        int GetTpf();
+        
+        void SetDxDy(int dx, int dy);
     };
 }
 #endif /* defined(__BlackLid__Animation__) */

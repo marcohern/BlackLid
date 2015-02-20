@@ -26,7 +26,7 @@ namespace objects {
         
         Engine *e;
         Vector2D position;
-        float speed;
+        Vector2D speed;
         
     public:
         Placeable(Engine *e);

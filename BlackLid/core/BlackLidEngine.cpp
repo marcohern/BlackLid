@@ -18,6 +18,7 @@
 
 #include "../objects/Placeable.h"
 #include "../objects/Drawable.h"
+#include "../objects/Animation.h"
 
 #include "Fps.h"
 #include "../input/InputCommand.h"
@@ -43,20 +44,28 @@ namespace core {
         rgradient = this->create->RGradient(128,128, 255,255,000,255, 255,255,000,000);
         
         placeable = new objects::Placeable(this);
-        placeable->SetXY(230, 240);
+        placeable->SetXY(32, 300);
         
         std::string path = Settings::GetInstance()->GetResource("/test/spaceship.png");
         drawabletex = IMG_LoadTexture(this->renderer, path.c_str());
         drawable = new objects::Drawable(this);
-        drawable->SetXY(260, 240);
+        drawable->SetXY(132, 300);
         drawable->SetTexture(drawabletex);
         drawable->SetRect(0,0,96,96);
         
-        
+        path = Settings::GetInstance()->GetResource("/test/bill_rizer_x2.png");
+        animationtex = IMG_LoadTexture(this->renderer, path.c_str());
+        animation = new objects::Animation(this);
+        animation->SetXY(232, 300);
+        animation->SetTexture(animationtex);
+        animation->SetRect(0,0,128,128);
+        animation->SetDxDy(128, 128);
+        animation->SetTpf(100);
     }
     
     void BlackLidEngine::Update(Uint32 dt) {
         this->angle += 0.0625*(double)dt;
+        animation->Update(dt);
     }
     
     void BlackLidEngine::Draw(Uint32 dt) {
@@ -80,6 +89,7 @@ namespace core {
         
         placeable->Draw(dt);
         drawable->Draw(dt);
+        animation->Draw(dt);
 
     }
 }

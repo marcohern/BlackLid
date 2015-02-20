@@ -30,15 +30,18 @@ namespace objects {
     Placeable::Placeable(Engine *e) {
         this->e = e;
         this->position.SetXY(0.0, 0.0);
+        this->speed.SetXY(0.0, 0.0);
     }
     
     Placeable::~Placeable() {
         this->e = NULL;
         this->position.SetXY(0.0, 0.0);
+        this->speed.SetXY(0.0, 0.0);
     }
     
     void Placeable::Update(Uint32 dt) {
-        
+        _p.SetXY(speed.GetX()*dt, speed.GetY()*dt);
+        this->position.Add(&_p);
     }
     
     void Placeable::Draw(Uint32 dt) {

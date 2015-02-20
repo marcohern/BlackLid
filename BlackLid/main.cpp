@@ -17,6 +17,7 @@
 
 #include "objects/Placeable.h"
 #include "objects/Drawable.h"
+#include "objects/Animation.h"
 
 #include "core/List.h"
 #include "input/InputCommand.h"

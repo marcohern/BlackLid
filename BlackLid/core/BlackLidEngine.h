@@ -21,6 +21,8 @@ namespace core {
         objects::Placeable *placeable;
         objects::Drawable *drawable;
         SDL_Texture *drawabletex;
+        objects::Animation *animation;
+        SDL_Texture *animationtex;
         double angle;
     protected:
         virtual void Update(Uint32 dt);
