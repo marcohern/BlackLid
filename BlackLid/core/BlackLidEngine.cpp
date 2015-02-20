@@ -60,7 +60,8 @@ namespace core {
         animation->SetTexture(animationtex);
         animation->SetRect(0,0,100,100);
         animation->SetDxDy(100, 100);
-        animation->SetTpf(10);
+        animation->SetTpf(100);
+        animation->SetScale(4.0);
     }
     
     void BlackLidEngine::Update(Uint32 dt) {

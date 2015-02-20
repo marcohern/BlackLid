@@ -30,6 +30,7 @@ namespace objects{
         this->pivot.SetXY(0.0, 0.0);
         this->angle = 0.0;
         this->flip = SDL_FLIP_NONE;
+        this->scale = 1.0;
     }
     
     Drawable::~Drawable() {
@@ -38,6 +39,7 @@ namespace objects{
         this->pivot.SetXY(0.0, 0.0);
         this->angle = 0.0;
         this->flip = SDL_FLIP_NONE;
+        this->scale = 0.0;
     }
     
     
@@ -51,8 +53,8 @@ namespace objects{
             _pivot.y = pivot.GetY();
             _rect.x = position.GetX();
             _rect.y = position.GetY();
-            _rect.w = this->rect.w;
-            _rect.h = this->rect.h;
+            _rect.w = this->rect.w*this->scale;
+            _rect.h = this->rect.h*this->scale;
             this->e->GetDraw()->Texture(this->texture, &this->rect, &_rect, this->angle, &_pivot, this->flip);
         }
         Placeable::Draw(dt);
@@ -110,5 +112,13 @@ namespace objects{
     void Drawable::AddRectXY(const core::Vector2D *v) {
         this->rect.x += v->GetX();
         this->rect.y += v->GetY();
+    }
+    
+    void Drawable::SetScale(float scale) {
+        this->scale = scale;
+    }
+    
+    float Drawable::GetScale() {
+        return this->scale;
     }
 }

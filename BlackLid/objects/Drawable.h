@@ -22,6 +22,7 @@ namespace objects {
         SDL_Texture *texture;
         double angle;
         SDL_RendererFlip flip;
+        float scale;
         
     public:
         Drawable(core::Engine *e);
@@ -42,6 +43,9 @@ namespace objects {
         void AddRectY(int dy);
         void AddRectXY(int dx, int dy);
         void AddRectXY(const Vector2D *v);
+        
+        void SetScale(float scale);
+        float GetScale();
     };
 }
 #endif /* defined(__BlackLid__Drawable__) */

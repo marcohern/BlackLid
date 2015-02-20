@@ -38,8 +38,10 @@ namespace objects {
         Drawable::Update(dt);
         this->ticks += dt;
         if (this->ticks > this->tpf) {
-            this->ticks -= this->tpf;
-            this->rect.x += dx;
+            while (this->ticks > this->tpf) {
+                this->ticks -= this->tpf;
+                this->rect.x += dx;
+            }
             int width, height;
             SDL_QueryTexture(this->texture, NULL, NULL, &width, &height);
             if (this->rect.x >= width) {
