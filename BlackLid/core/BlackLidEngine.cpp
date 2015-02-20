@@ -53,14 +53,14 @@ namespace core {
         drawable->SetTexture(drawabletex);
         drawable->SetRect(0,0,96,96);
         
-        path = Settings::GetInstance()->GetResource("/test/bill_rizer_x2.png");
+        path = Settings::GetInstance()->GetResource("/test/explosion.png");
         animationtex = IMG_LoadTexture(this->renderer, path.c_str());
         animation = new objects::Animation(this);
         animation->SetXY(232, 300);
         animation->SetTexture(animationtex);
-        animation->SetRect(0,0,128,128);
-        animation->SetDxDy(128, 128);
-        animation->SetTpf(100);
+        animation->SetRect(0,0,100,100);
+        animation->SetDxDy(100, 100);
+        animation->SetTpf(10);
     }
     
     void BlackLidEngine::Update(Uint32 dt) {
