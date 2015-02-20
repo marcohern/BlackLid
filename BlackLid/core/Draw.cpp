@@ -49,6 +49,16 @@ namespace core {
         SDL_RenderCopyEx(this->e->GetRenderer(), t, s, &_rect, angle, p, flip);
     }
     
+    void Draw::Rectangle(const SDL_Rect *r, const SDL_Color *color) {
+        _point = this->e->GetCamera()->GetSdlPosition();
+        _rect.x=_point.x+r->x;
+        _rect.y=_point.y+r->y;
+        _rect.w=r->w;
+        _rect.h=r->h;
+        SDL_SetRenderDrawColor(this->e->GetRenderer(), color->r, color->g, color->b, color->a);
+        SDL_RenderDrawRect(this->e->GetRenderer(), &_rect);
+    }
+    
     void Draw::Crosshair( int x, int y) {
         _point = this->e->GetCamera()->GetSdlPosition();
         _point.x+=x;

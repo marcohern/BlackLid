@@ -27,6 +27,8 @@
 
 namespace core {
     
+    SDL_Color BlackLidEngine::_color;
+    
     BlackLidEngine::BlackLidEngine():Engine() {
         this->a=0;
     }
@@ -60,7 +62,7 @@ namespace core {
         animation->SetTexture(animationtex);
         animation->SetRect(0,0,100,100);
         animation->SetDxDy(100, 100);
-        animation->SetTpf(100);
+        animation->SetTpf(32);
         animation->SetScale(4.0);
     }
     
@@ -91,6 +93,7 @@ namespace core {
         placeable->Draw(dt);
         drawable->Draw(dt);
         animation->Draw(dt);
+        _color.r=0;_color.g=255;_color.b=0;_color.a=127;
 
     }
 }

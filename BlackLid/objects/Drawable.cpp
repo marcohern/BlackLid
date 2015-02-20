@@ -24,6 +24,7 @@
 namespace objects{
     SDL_Rect Drawable::_rect;
     SDL_Point Drawable::_pivot;
+    SDL_Color Drawable::_color;
     
     Drawable::Drawable(core::Engine *e):Placeable(e) {
         this->texture = NULL;
@@ -48,14 +49,17 @@ namespace objects{
     }
     
     void Drawable::Draw(Uint32 dt) {
+        _pivot.x = pivot.GetX();
+        _pivot.y = pivot.GetY();
+        _rect.x = position.GetX();
+        _rect.y = position.GetY();
+        _rect.w = this->rect.w*this->scale;
+        _rect.h = this->rect.h*this->scale;
+        this->e->GetDraw()->Texture(this->texture, &this->rect, &_rect, this->angle, &_pivot, this->flip);
+        
         if (Settings::GetInstance()->DrawReferences()) {
-            _pivot.x = pivot.GetX();
-            _pivot.y = pivot.GetY();
-            _rect.x = position.GetX();
-            _rect.y = position.GetY();
-            _rect.w = this->rect.w*this->scale;
-            _rect.h = this->rect.h*this->scale;
-            this->e->GetDraw()->Texture(this->texture, &this->rect, &_rect, this->angle, &_pivot, this->flip);
+            _color.r=0;_color.b=0;_color.g=255;_color.a=127;
+            this->e->GetDraw()->Rectangle(&_rect, &_color);
         }
         Placeable::Draw(dt);
     }

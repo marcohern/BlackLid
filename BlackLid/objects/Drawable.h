@@ -15,6 +15,7 @@ namespace objects {
     protected:
         static SDL_Rect _rect;
         static SDL_Point _pivot;
+        static SDL_Color _color;
         
         SDL_Rect rect;
         Vector2D pivot;

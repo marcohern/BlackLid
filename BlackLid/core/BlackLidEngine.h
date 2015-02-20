@@ -12,6 +12,8 @@
 namespace core {
     class BlackLidEngine: public Engine {
     private:
+        static SDL_Color _color;
+        
         Uint32 a;
         SDL_Texture *color;
         SDL_Texture *hgradient;
@@ -23,6 +25,7 @@ namespace core {
         SDL_Texture *drawabletex;
         objects::Animation *animation;
         SDL_Texture *animationtex;
+        
         double angle;
     protected:
         virtual void Update(Uint32 dt);

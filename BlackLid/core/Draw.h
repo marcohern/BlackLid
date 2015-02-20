@@ -24,6 +24,8 @@ namespace core {
         void Texture(SDL_Texture *t, const SDL_Rect *r, const double angle,  const SDL_Point *p,  const SDL_RendererFlip flip);
         void Texture(SDL_Texture *t, const SDL_Rect *s, const SDL_Rect *r, const double angle,  const SDL_Point *p,  const SDL_RendererFlip flip);
         
+        void Rectangle(const SDL_Rect *r, const SDL_Color *color);
+        
         void Crosshair(int x, int y);
         void Crosshair(const Vector2D *pos);
     };
