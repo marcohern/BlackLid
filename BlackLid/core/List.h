@@ -19,6 +19,7 @@ namespace core {
         void Add(T* item);
         T* Find(const char *s);
         T* Find(std::string s);
+        void Clear();
 
         inline T* Begin();
         inline bool Finished();
@@ -109,6 +110,18 @@ namespace core {
     template <class T>
     int List<T>::GetCount() {
         return this->count;
+    }
+    
+    template <class T>
+    void List<T>::Clear() {
+        ListItem<T> *p = first, *t;
+        while (p!=0x0) {
+            t = p;
+            p=p->GetNext();
+            delete t;
+        }
+        this->first = this->last = this->cursor = 0x0;
+        this->count=0;
     }
 }
 
