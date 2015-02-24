@@ -14,12 +14,13 @@
 #include "core/GameException.h"
 
 #include "core/Vector2D.h"
+#include "core/List.h"
 
 #include "objects/Placeable.h"
 #include "objects/Drawable.h"
 #include "objects/Animation.h"
+#include "objects/Tile.h"
 
-#include "core/List.h"
 #include "input/InputCommand.h"
 #include "core/Fps.h"
 #include "core/Engine.h"

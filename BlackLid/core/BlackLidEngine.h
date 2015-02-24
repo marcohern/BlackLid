@@ -25,6 +25,8 @@ namespace core {
         SDL_Texture *drawabletex;
         objects::Animation *animation;
         SDL_Texture *animationtex;
+        objects::Tile *tile;
+        SDL_Texture *tiletex;
         
         double angle;
     protected:

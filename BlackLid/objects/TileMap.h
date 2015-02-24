@@ -14,11 +14,13 @@ namespace objects {
     protected:
         Engine *e;
         Tile ***map;
+        List<Tile> tpl;
     
     public:
         TileMap(Engine *e);
         virtual ~TileMap();
         
+        void AddTemplate(const char *symbol, Tile *t);
         void Set(int w, int h, const char **s);
         void Clear();
     };

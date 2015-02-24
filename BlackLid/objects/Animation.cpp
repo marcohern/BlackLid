@@ -35,20 +35,22 @@ namespace objects {
     }
     
     void Animation::Update(Uint32 dt) {
+        int width, height;
+        if (dt==0) return;
         Drawable::Update(dt);
+        SDL_QueryTexture(this->texture, NULL, NULL, &width, &height);
         this->ticks += dt;
         if (this->ticks > this->tpf) {
             while (this->ticks > this->tpf) {
                 this->ticks -= this->tpf;
                 this->rect.x += dx;
-            }
-            int width, height;
-            SDL_QueryTexture(this->texture, NULL, NULL, &width, &height);
-            if (this->rect.x >= width) {
-                this->rect.x = 0;
-                this->rect.y += dy;
-                if (this->rect.y >= height) {
-                    this->rect.y = 0;
+                
+                if (this->rect.x >= width) {
+                    this->rect.x = 0;
+                    this->rect.y += dy;
+                    if (this->rect.y >= height) {
+                        this->rect.y = 0;
+                    }
                 }
             }
         }

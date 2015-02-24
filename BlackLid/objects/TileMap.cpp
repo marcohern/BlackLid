@@ -32,14 +32,24 @@ namespace objects {
         map = NULL;
     }
     
+    void TileMap::AddTemplate(const char *symbol, Tile *t) {
+        this->tpl.Add(symbol, t);
+    }
+    
     void TileMap::Set(int w, int h, const char **s) {
         int i,j;
+        char id[2];
+        id[0] = ' ';
+        id[1] = '\0';
         map = new Tile**[h];
         for (i=0;i<h;i++) {
             map[i] = new Tile*[w];
             for (j=0;j<w;j++) {
                 map[i][j] = NULL;
-                if (s[i][j] == '.') {
+                id[0] = s[i][j];
+                Tile *t = this->tpl.Find(id);
+                if (t!=NULL) {
+                    map[i][j] = t;
                 }
             }
         }

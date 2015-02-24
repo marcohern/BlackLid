@@ -15,10 +15,12 @@
 #include "Create.h"
 #include "Vector2D.h"
 #include "Draw.h"
+#include "List.h"
 
 #include "../objects/Placeable.h"
 #include "../objects/Drawable.h"
 #include "../objects/Animation.h"
+#include "../objects/Tile.h"
 
 #include "Fps.h"
 #include "../input/InputCommand.h"
@@ -64,11 +66,21 @@ namespace core {
         animation->SetDxDy(100, 100);
         animation->SetTpf(32);
         animation->SetScale(4.0);
+        
+        path = Settings::GetInstance()->GetResource("/test/tile-rocks.png");
+        tiletex = IMG_LoadTexture(this->renderer, path.c_str());
+        tile = new objects::Tile(this);
+        tile->SetXY(300,300);
+        tile->SetTexture(tiletex);
+        tile->SetRect(0,0,128,128);
+        tile->SetTpf(32);
+        
     }
     
     void BlackLidEngine::Update(Uint32 dt) {
         this->angle += 0.0625*(double)dt;
         animation->Update(dt);
+        tile->Update(dt);
     }
     
     void BlackLidEngine::Draw(Uint32 dt) {
@@ -93,6 +105,7 @@ namespace core {
         placeable->Draw(dt);
         drawable->Draw(dt);
         animation->Draw(dt);
+        tile->Draw(dt);
         _color.r=0;_color.g=255;_color.b=0;_color.a=127;
 
     }
