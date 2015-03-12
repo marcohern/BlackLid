@@ -112,17 +112,11 @@
 		A718EA321A87CA380016CF14 = {
 			isa = PBXGroup;
 			children = (
-				A79B64941A9126200064E776 /* objects */,
-				A797A12C1A8D88D700B43CF9 /* cameras */,
 				A718EA3D1A87CA380016CF14 /* BlackLid */,
 				A718EA8C1A8877DB0016CF14 /* content */,
-				A718EA6B1A87CC3C0016CF14 /* core */,
-				A718EAA81A89C0770016CF14 /* exceptions */,
 				A718EA891A8877060016CF14 /* Frameworks */,
-				A718EA7D1A87E6950016CF14 /* input */,
 				A718EA3C1A87CA380016CF14 /* Products */,
 				A718EA971A89AFF40016CF14 /* testout */,
-				A718EAA21A89BBD80016CF14 /* tests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +131,12 @@
 		A718EA3D1A87CA380016CF14 /* BlackLid */ = {
 			isa = PBXGroup;
 			children = (
+				A79B64941A9126200064E776 /* objects */,
+				A797A12C1A8D88D700B43CF9 /* cameras */,
+				A718EA6B1A87CC3C0016CF14 /* core */,
+				A718EAA81A89C0770016CF14 /* exceptions */,
+				A718EA7D1A87E6950016CF14 /* input */,
+				A718EAA21A89BBD80016CF14 /* tests */,
 				A718EA3E1A87CA380016CF14 /* Supporting Files */,
 				A718EA641A87CA800016CF14 /* main.cpp */,
 			);
@@ -185,6 +185,7 @@
 				A718EAB61A8B0C710016CF14 /* Draw.h */,
 			);
 			name = core;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		A718EA7D1A87E6950016CF14 /* input */ = {
@@ -196,6 +197,7 @@
 				A718EA821A87F4580016CF14 /* InputKeyMap.h */,
 			);
 			name = input;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		A718EA891A8877060016CF14 /* Frameworks */ = {
@@ -214,6 +216,7 @@
 				A718EAA41A89BC0D0016CF14 /* Vector2DTest.h */,
 			);
 			name = tests;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		A718EAA81A89C0770016CF14 /* exceptions */ = {
@@ -222,8 +225,7 @@
 				A718EAA91A89C08E0016CF14 /* AssertException.cpp */,
 				A718EAAA1A89C08E0016CF14 /* AssertException.h */,
 			);
-			name = exceptions;
-			path = BlackLid/exceptions;
+			path = exceptions;
 			sourceTree = "<group>";
 		};
 		A797A12C1A8D88D700B43CF9 /* cameras */ = {
@@ -233,6 +235,7 @@
 				A797A12A1A8D88CB00B43CF9 /* ScrollCamera.h */,
 			);
 			name = cameras;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		A79B64941A9126200064E776 /* objects */ = {
@@ -250,6 +253,7 @@
 				A79B649C1A977F1B0064E776 /* Tile.h */,
 			);
 			name = objects;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
