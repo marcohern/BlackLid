@@ -26,7 +26,7 @@ namespace  core {
         void SetPathBase(const char *path);
         void SetPathBase(std::string path);
         std::string GetPath();
-        std::string GetResource(const char* path);
+        std::string GetResourcePath(const char* path);
         
         bool DrawReferences();
     };

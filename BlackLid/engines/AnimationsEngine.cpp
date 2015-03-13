@@ -53,14 +53,14 @@ namespace engines {
         placeable = new objects::Placeable(this);
         placeable->SetXY(32, 300);
         
-        std::string path = Settings::GetInstance()->GetResource("/test/spaceship.png");
+        std::string path = Settings::GetInstance()->GetResourcePath("/test/spaceship.png");
         drawabletex = IMG_LoadTexture(this->renderer, path.c_str());
         drawable = new objects::Drawable(this);
         drawable->SetXY(132, 300);
         drawable->SetTexture(drawabletex);
         drawable->SetRect(0,0,96,96);
         
-        path = Settings::GetInstance()->GetResource("/test/explosion.png");
+        path = Settings::GetInstance()->GetResourcePath("/test/explosion.png");
         animationtex = IMG_LoadTexture(this->renderer, path.c_str());
         animation = new objects::Animation(this);
         animation->SetXY(232, 300);
@@ -70,7 +70,7 @@ namespace engines {
         animation->SetTpf(32);
         animation->SetScale(4.0);
         
-        path = Settings::GetInstance()->GetResource("/test/tile-rocks.png");
+        path = Settings::GetInstance()->GetResourcePath("/test/tile-rocks.png");
         tiletex = IMG_LoadTexture(this->renderer, path.c_str());
         tile = new objects::Tile(this);
         tile->SetXY(300,300);

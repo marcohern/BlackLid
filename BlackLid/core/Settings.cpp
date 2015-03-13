@@ -46,7 +46,7 @@ namespace core{
         return this->path;
     }
     
-    std::string Settings::GetResource(const char *path) {
+    std::string Settings::GetResourcePath(const char *path) {
         std::string result(this->path);
         result.append("/Resources/content");
         result.append(path);
