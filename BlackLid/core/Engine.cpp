@@ -13,6 +13,7 @@
 
 #include "Vector2D.h"
 #include "GameException.h"
+#include "../core/define.h"
 #include "Settings.h"
 #include "Create.h"
 #include "Camera.h"

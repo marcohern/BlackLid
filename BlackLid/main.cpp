@@ -10,6 +10,7 @@
 #include <string>
 #include <SDL2/SDL.h>
 
+#include "core/define.h"
 #include "core/Settings.h"
 #include "core/GameException.h"
 
@@ -20,11 +21,13 @@
 #include "objects/Drawable.h"
 #include "objects/Animation.h"
 #include "objects/Tile.h"
+#include "objects/TileMap.h"
 
 #include "input/InputCommand.h"
 #include "core/Fps.h"
 #include "core/Engine.h"
 #include "engines/AnimationsEngine.h"
+#include "engines/TileTestEngine.h"
 
 #include "core/Test.h"
 #include "tests/Vector2DTest.h"
@@ -34,7 +37,7 @@ using namespace tests;
 using namespace engines;
 
 void rungame() {
-    AnimationsEngine e;
+    TileTestEngine e;
     try {
         e.Setup();
         e.Run();

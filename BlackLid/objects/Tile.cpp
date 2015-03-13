@@ -10,6 +10,8 @@
 #include <SDL2/SDL.h>
 #include <string>
 
+#include "../core/define.h"
+
 #include "../input/InputCommand.h"
 #include "../core/List.h"
 #include "../core/Fps.h"

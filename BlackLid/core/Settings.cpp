@@ -9,6 +9,7 @@
 #include <stdio.h>
 #include <string>
 #include <iostream>
+#include "../core/define.h"
 #include "Settings.h"
 
 namespace core{

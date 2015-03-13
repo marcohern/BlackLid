@@ -13,6 +13,7 @@
 #include <SDL2_image/SDL_image.h>
 #include <string>
 
+#include "../core/define.h"
 #include "../core/Settings.h"
 #include "../core/Create.h"
 #include "../core/Vector2D.h"

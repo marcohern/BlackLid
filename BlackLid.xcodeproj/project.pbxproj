@@ -29,6 +29,7 @@
 		A718EAB41A8B0C530016CF14 /* ForceField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A718EAB21A8B0C530016CF14 /* ForceField.cpp */; };
 		A718EAB71A8B0C710016CF14 /* Draw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A718EAB51A8B0C710016CF14 /* Draw.cpp */; };
 		A719FF361AB26BFF00B05CE0 /* AnimationsEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A719FF341AB26BFF00B05CE0 /* AnimationsEngine.cpp */; };
+		A719FF3A1AB28CDD00B05CE0 /* TileTestEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A719FF381AB28CDD00B05CE0 /* TileTestEngine.cpp */; };
 		A797A12B1A8D88CB00B43CF9 /* ScrollCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A797A1291A8D88CB00B43CF9 /* ScrollCamera.cpp */; };
 		A79B64931A91261B0064E776 /* Placeable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A79B64911A91261B0064E776 /* Placeable.cpp */; };
 		A79B64971A9129E90064E776 /* Drawable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A79B64951A9129E90064E776 /* Drawable.cpp */; };
@@ -82,6 +83,10 @@
 		A718EAB61A8B0C710016CF14 /* Draw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Draw.h; path = BlackLid/core/Draw.h; sourceTree = "<group>"; };
 		A719FF341AB26BFF00B05CE0 /* AnimationsEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AnimationsEngine.cpp; path = engines/AnimationsEngine.cpp; sourceTree = "<group>"; };
 		A719FF351AB26BFF00B05CE0 /* AnimationsEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnimationsEngine.h; path = engines/AnimationsEngine.h; sourceTree = "<group>"; };
+		A719FF381AB28CDD00B05CE0 /* TileTestEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TileTestEngine.cpp; path = engines/TileTestEngine.cpp; sourceTree = "<group>"; };
+		A719FF391AB28CDD00B05CE0 /* TileTestEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TileTestEngine.h; path = engines/TileTestEngine.h; sourceTree = "<group>"; };
+		A719FF3B1AB296E300B05CE0 /* define_mac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = define_mac.h; path = BlackLid/core/define_mac.h; sourceTree = "<group>"; };
+		A719FF3C1AB2970200B05CE0 /* define_win.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = define_win.h; path = BlackLid/core/define_win.h; sourceTree = "<group>"; };
 		A797A1291A8D88CB00B43CF9 /* ScrollCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ScrollCamera.cpp; path = BlackLid/cameras/ScrollCamera.cpp; sourceTree = SOURCE_ROOT; };
 		A797A12A1A8D88CB00B43CF9 /* ScrollCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScrollCamera.h; path = BlackLid/cameras/ScrollCamera.h; sourceTree = SOURCE_ROOT; };
 		A79B64911A91261B0064E776 /* Placeable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Placeable.cpp; path = BlackLid/objects/Placeable.cpp; sourceTree = "<group>"; };
@@ -131,15 +136,15 @@
 		A718EA3D1A87CA380016CF14 /* BlackLid */ = {
 			isa = PBXGroup;
 			children = (
-				A79B64941A9126200064E776 /* objects */,
 				A797A12C1A8D88D700B43CF9 /* cameras */,
 				A718EA6B1A87CC3C0016CF14 /* core */,
+				A719FF371AB26C0800B05CE0 /* engines */,
 				A718EAA81A89C0770016CF14 /* exceptions */,
 				A718EA7D1A87E6950016CF14 /* input */,
-				A718EAA21A89BBD80016CF14 /* tests */,
-				A718EA3E1A87CA380016CF14 /* Supporting Files */,
 				A718EA641A87CA800016CF14 /* main.cpp */,
-				A719FF371AB26C0800B05CE0 /* engines */,
+				A79B64941A9126200064E776 /* objects */,
+				A718EA3E1A87CA380016CF14 /* Supporting Files */,
+				A718EAA21A89BBD80016CF14 /* tests */,
 			);
 			path = BlackLid;
 			sourceTree = "<group>";
@@ -178,6 +183,8 @@
 				A718EAAC1A89CCA50016CF14 /* Matrix.cpp */,
 				A718EAAD1A89CCA50016CF14 /* Matrix.h */,
 				A718EAB01A8AA00A0016CF14 /* define.h */,
+				A719FF3B1AB296E300B05CE0 /* define_mac.h */,
+				A719FF3C1AB2970200B05CE0 /* define_win.h */,
 				A718EAB21A8B0C530016CF14 /* ForceField.cpp */,
 				A718EAB31A8B0C530016CF14 /* ForceField.h */,
 				A718EAB51A8B0C710016CF14 /* Draw.cpp */,
@@ -232,6 +239,8 @@
 			children = (
 				A719FF341AB26BFF00B05CE0 /* AnimationsEngine.cpp */,
 				A719FF351AB26BFF00B05CE0 /* AnimationsEngine.h */,
+				A719FF381AB28CDD00B05CE0 /* TileTestEngine.cpp */,
+				A719FF391AB28CDD00B05CE0 /* TileTestEngine.h */,
 			);
 			name = engines;
 			sourceTree = "<group>";
@@ -349,6 +358,7 @@
 				A718EA711A87D03E0016CF14 /* GameException.cpp in Sources */,
 				A718EA9B1A89B3F40016CF14 /* Settings.cpp in Sources */,
 				A79B64A01A9796C50064E776 /* TileMap.cpp in Sources */,
+				A719FF3A1AB28CDD00B05CE0 /* TileTestEngine.cpp in Sources */,
 				A718EA831A87F4580016CF14 /* InputKeyMap.cpp in Sources */,
 				A719FF361AB26BFF00B05CE0 /* AnimationsEngine.cpp in Sources */,
 				A718EA961A89A7380016CF14 /* Vector2D.cpp in Sources */,
@@ -448,6 +458,7 @@
 					"$(inherited)",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
 				);
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
 				INFOPLIST_FILE = BlackLid/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -463,6 +474,7 @@
 					"$(inherited)",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
 				);
+				GCC_PREPROCESSOR_DEFINITIONS = "";
 				INFOPLIST_FILE = BlackLid/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

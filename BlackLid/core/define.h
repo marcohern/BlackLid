@@ -13,4 +13,18 @@
 #define TAU 6.28318530718
 #define TPS 1000
 
+#ifdef __OSX__
+
+#include "define_mac.h"
+
+#endif /*__BlackLid__MacOS__*/
+
+
+#ifdef __MINGW32__
+
+#include "define_win.h"
+
+#endif /*__BlackLid__Windows__*/
+
+
 #endif /* defined(__BlackLid__define__) */

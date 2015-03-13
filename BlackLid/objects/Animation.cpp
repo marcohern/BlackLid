@@ -14,6 +14,7 @@
 #include "../core/Fps.h"
 #include "../core/Engine.h"
 #include "../core/Vector2D.h"
+#include "../core/define.h"
 #include "../core/Settings.h"
 #include "../core/Fps.h"
 #include "../core/Draw.h"

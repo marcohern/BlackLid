@@ -9,6 +9,10 @@
 #ifndef __BlackLid__TileMap__
 #define __BlackLid__TileMap__
 
+namespace core {
+    class Engine;
+}
+
 namespace objects {
     class TileMap {
     protected:
