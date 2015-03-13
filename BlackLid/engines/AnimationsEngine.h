@@ -1,16 +1,18 @@
 //
-//  BlackLidEngine.h
+//  AnimationsEngine.h
 //  BlackLid
 //
-//  Created by Marco Hernandez on 8/02/15.
+//  Created by Marco Hernandez on 12/03/15.
 //  Copyright (c) 2015 Marco Hernandez. All rights reserved.
 //
 
-#ifndef __BlackLid__BlackLidEngine__
-#define __BlackLid__BlackLidEngine__
+#ifndef __BlackLid__AnimationsEngine__
+#define __BlackLid__AnimationsEngine__
 
-namespace core {
-    class BlackLidEngine: public Engine {
+#include <stdio.h>
+
+namespace engines {
+    class AnimationsEngine: public core::Engine {
     private:
         static SDL_Color _color;
         
@@ -34,8 +36,10 @@ namespace core {
         virtual void Draw(Uint32 dt);
     public:
         void Setup();
-        BlackLidEngine();
-        virtual ~BlackLidEngine();
+        AnimationsEngine();
+        virtual ~AnimationsEngine();
     };
 }
-#endif /* defined(__BlackLid__BlackLidEngine__) */
+
+
+#endif /* defined(__BlackLid__AnimationsEngine__) */

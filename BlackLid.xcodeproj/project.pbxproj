@@ -11,7 +11,6 @@
 		A718EA6A1A87CB8B0016CF14 /* Engine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A718EA681A87CB8B0016CF14 /* Engine.cpp */; };
 		A718EA711A87D03E0016CF14 /* GameException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A718EA6F1A87D03E0016CF14 /* GameException.cpp */; };
 		A718EA731A87DB540016CF14 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A718EA721A87DB540016CF14 /* SDL2.framework */; };
-		A718EA761A87DD540016CF14 /* BlackLidEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A718EA741A87DD540016CF14 /* BlackLidEngine.cpp */; };
 		A718EA791A87E5430016CF14 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A718EA771A87E5430016CF14 /* Camera.cpp */; };
 		A718EA801A87E7E50016CF14 /* InputCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A718EA7E1A87E7E50016CF14 /* InputCommand.cpp */; };
 		A718EA831A87F4580016CF14 /* InputKeyMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A718EA811A87F4580016CF14 /* InputKeyMap.cpp */; };
@@ -29,6 +28,7 @@
 		A718EAAE1A89CCA50016CF14 /* Matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A718EAAC1A89CCA50016CF14 /* Matrix.cpp */; };
 		A718EAB41A8B0C530016CF14 /* ForceField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A718EAB21A8B0C530016CF14 /* ForceField.cpp */; };
 		A718EAB71A8B0C710016CF14 /* Draw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A718EAB51A8B0C710016CF14 /* Draw.cpp */; };
+		A719FF361AB26BFF00B05CE0 /* AnimationsEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A719FF341AB26BFF00B05CE0 /* AnimationsEngine.cpp */; };
 		A797A12B1A8D88CB00B43CF9 /* ScrollCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A797A1291A8D88CB00B43CF9 /* ScrollCamera.cpp */; };
 		A79B64931A91261B0064E776 /* Placeable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A79B64911A91261B0064E776 /* Placeable.cpp */; };
 		A79B64971A9129E90064E776 /* Drawable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A79B64951A9129E90064E776 /* Drawable.cpp */; };
@@ -46,8 +46,6 @@
 		A718EA6F1A87D03E0016CF14 /* GameException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameException.cpp; path = BlackLid/core/GameException.cpp; sourceTree = "<group>"; };
 		A718EA701A87D03E0016CF14 /* GameException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameException.h; path = BlackLid/core/GameException.h; sourceTree = "<group>"; };
 		A718EA721A87DB540016CF14 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = /Library/Frameworks/SDL2.framework; sourceTree = "<absolute>"; };
-		A718EA741A87DD540016CF14 /* BlackLidEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BlackLidEngine.cpp; path = BlackLid/core/BlackLidEngine.cpp; sourceTree = "<group>"; };
-		A718EA751A87DD540016CF14 /* BlackLidEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BlackLidEngine.h; path = BlackLid/core/BlackLidEngine.h; sourceTree = "<group>"; };
 		A718EA771A87E5430016CF14 /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Camera.cpp; path = BlackLid/core/Camera.cpp; sourceTree = "<group>"; };
 		A718EA781A87E5430016CF14 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Camera.h; path = BlackLid/core/Camera.h; sourceTree = "<group>"; };
 		A718EA7E1A87E7E50016CF14 /* InputCommand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = InputCommand.cpp; path = BlackLid/input/InputCommand.cpp; sourceTree = "<group>"; };
@@ -82,6 +80,8 @@
 		A718EAB31A8B0C530016CF14 /* ForceField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ForceField.h; path = BlackLid/core/ForceField.h; sourceTree = "<group>"; };
 		A718EAB51A8B0C710016CF14 /* Draw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Draw.cpp; path = BlackLid/core/Draw.cpp; sourceTree = "<group>"; };
 		A718EAB61A8B0C710016CF14 /* Draw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Draw.h; path = BlackLid/core/Draw.h; sourceTree = "<group>"; };
+		A719FF341AB26BFF00B05CE0 /* AnimationsEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AnimationsEngine.cpp; path = engines/AnimationsEngine.cpp; sourceTree = "<group>"; };
+		A719FF351AB26BFF00B05CE0 /* AnimationsEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnimationsEngine.h; path = engines/AnimationsEngine.h; sourceTree = "<group>"; };
 		A797A1291A8D88CB00B43CF9 /* ScrollCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ScrollCamera.cpp; path = BlackLid/cameras/ScrollCamera.cpp; sourceTree = SOURCE_ROOT; };
 		A797A12A1A8D88CB00B43CF9 /* ScrollCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScrollCamera.h; path = BlackLid/cameras/ScrollCamera.h; sourceTree = SOURCE_ROOT; };
 		A79B64911A91261B0064E776 /* Placeable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Placeable.cpp; path = BlackLid/objects/Placeable.cpp; sourceTree = "<group>"; };
@@ -139,6 +139,7 @@
 				A718EAA21A89BBD80016CF14 /* tests */,
 				A718EA3E1A87CA380016CF14 /* Supporting Files */,
 				A718EA641A87CA800016CF14 /* main.cpp */,
+				A719FF371AB26C0800B05CE0 /* engines */,
 			);
 			path = BlackLid;
 			sourceTree = "<group>";
@@ -160,8 +161,6 @@
 				A718EA691A87CB8B0016CF14 /* Engine.h */,
 				A718EA6F1A87D03E0016CF14 /* GameException.cpp */,
 				A718EA701A87D03E0016CF14 /* GameException.h */,
-				A718EA741A87DD540016CF14 /* BlackLidEngine.cpp */,
-				A718EA751A87DD540016CF14 /* BlackLidEngine.h */,
 				A718EA771A87E5430016CF14 /* Camera.cpp */,
 				A718EA781A87E5430016CF14 /* Camera.h */,
 				A718EA8E1A887ACF0016CF14 /* Create.cpp */,
@@ -226,6 +225,15 @@
 				A718EAAA1A89C08E0016CF14 /* AssertException.h */,
 			);
 			path = exceptions;
+			sourceTree = "<group>";
+		};
+		A719FF371AB26C0800B05CE0 /* engines */ = {
+			isa = PBXGroup;
+			children = (
+				A719FF341AB26BFF00B05CE0 /* AnimationsEngine.cpp */,
+				A719FF351AB26BFF00B05CE0 /* AnimationsEngine.h */,
+			);
+			name = engines;
 			sourceTree = "<group>";
 		};
 		A797A12C1A8D88D700B43CF9 /* cameras */ = {
@@ -340,9 +348,9 @@
 				A718EAB71A8B0C710016CF14 /* Draw.cpp in Sources */,
 				A718EA711A87D03E0016CF14 /* GameException.cpp in Sources */,
 				A718EA9B1A89B3F40016CF14 /* Settings.cpp in Sources */,
-				A718EA761A87DD540016CF14 /* BlackLidEngine.cpp in Sources */,
 				A79B64A01A9796C50064E776 /* TileMap.cpp in Sources */,
 				A718EA831A87F4580016CF14 /* InputKeyMap.cpp in Sources */,
+				A719FF361AB26BFF00B05CE0 /* AnimationsEngine.cpp in Sources */,
 				A718EA961A89A7380016CF14 /* Vector2D.cpp in Sources */,
 				A718EAA51A89BC0D0016CF14 /* Vector2DTest.cpp in Sources */,
 				A718EAB41A8B0C530016CF14 /* ForceField.cpp in Sources */,

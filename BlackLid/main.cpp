@@ -24,16 +24,17 @@
 #include "input/InputCommand.h"
 #include "core/Fps.h"
 #include "core/Engine.h"
-#include "core/BlackLidEngine.h"
+#include "engines/AnimationsEngine.h"
 
 #include "core/Test.h"
 #include "tests/Vector2DTest.h"
 
 using namespace core;
 using namespace tests;
+using namespace engines;
 
 void rungame() {
-    BlackLidEngine e;
+    AnimationsEngine e;
     try {
         e.Setup();
         e.Run();

@@ -1,45 +1,47 @@
 //
-//  BlackLidEngine.cpp
+//  AnimationsEngine.cpp
 //  BlackLid
 //
-//  Created by Marco Hernandez on 8/02/15.
+//  Created by Marco Hernandez on 12/03/15.
 //  Copyright (c) 2015 Marco Hernandez. All rights reserved.
 //
+
+
 
 #include <stdio.h>
 #include <SDL2/SDL.h>
 #include <SDL2_image/SDL_image.h>
 #include <string>
 
-#include "Settings.h"
-#include "Create.h"
-#include "Vector2D.h"
-#include "Draw.h"
-#include "List.h"
+#include "../core/Settings.h"
+#include "../core/Create.h"
+#include "../core/Vector2D.h"
+#include "../core/Draw.h"
+#include "../core/List.h"
 
 #include "../objects/Placeable.h"
 #include "../objects/Drawable.h"
 #include "../objects/Animation.h"
 #include "../objects/Tile.h"
 
-#include "Fps.h"
+#include "../core/Fps.h"
 #include "../input/InputCommand.h"
-#include "Engine.h"
-#include "BlackLidEngine.h"
+#include "../core/Engine.h"
+#include "AnimationsEngine.h"
 
-namespace core {
+namespace engines {
     
-    SDL_Color BlackLidEngine::_color;
+    SDL_Color AnimationsEngine::_color;
     
-    BlackLidEngine::BlackLidEngine():Engine() {
+    AnimationsEngine::AnimationsEngine():Engine() {
         this->a=0;
     }
     
-    BlackLidEngine::~BlackLidEngine() {
+    AnimationsEngine::~AnimationsEngine() {
         
     }
     
-    void BlackLidEngine::Setup() {
+    void AnimationsEngine::Setup() {
         Engine::Setup();
         
         color     = this->create->Color    (128,128, 255,255,255,255);
@@ -77,13 +79,13 @@ namespace core {
         
     }
     
-    void BlackLidEngine::Update(Uint32 dt) {
+    void AnimationsEngine::Update(Uint32 dt) {
         this->angle += 0.0625*(double)dt;
         animation->Update(dt);
         tile->Update(dt);
     }
     
-    void BlackLidEngine::Draw(Uint32 dt) {
+    void AnimationsEngine::Draw(Uint32 dt) {
         SDL_Rect r;
         r.w=128;
         r.h=128;
@@ -107,6 +109,6 @@ namespace core {
         animation->Draw(dt);
         tile->Draw(dt);
         _color.r=0;_color.g=255;_color.b=0;_color.a=127;
-
+        
     }
 }
