@@ -23,7 +23,7 @@ namespace core{
     
     Settings::Settings() {
         this->path = "";
-        drawReferences = true;
+        drawReferences = false;
     }
     
     void Settings::SetPath(std::string path){

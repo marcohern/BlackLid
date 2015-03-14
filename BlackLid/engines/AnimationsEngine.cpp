@@ -60,6 +60,14 @@ namespace engines {
         drawable->SetTexture(drawabletex);
         drawable->SetRect(0,0,96,96);
         
+        path = Settings::GetInstance()->GetResourcePath("/test/tile-rocks.png");
+        tiletex = IMG_LoadTexture(this->renderer, path.c_str());
+        tile = new objects::Tile(this);
+        tile->SetXY(300,300);
+        tile->SetTexture(tiletex);
+        tile->SetRect(0,0,128,128);
+        tile->SetTpf(32);
+        
         path = Settings::GetInstance()->GetResourcePath("/test/explosion.png");
         animationtex = IMG_LoadTexture(this->renderer, path.c_str());
         animation = new objects::Animation(this);
@@ -69,14 +77,6 @@ namespace engines {
         animation->SetDxDy(100, 100);
         animation->SetTpf(32);
         animation->SetScale(4.0);
-        
-        path = Settings::GetInstance()->GetResourcePath("/test/tile-rocks.png");
-        tiletex = IMG_LoadTexture(this->renderer, path.c_str());
-        tile = new objects::Tile(this);
-        tile->SetXY(300,300);
-        tile->SetTexture(tiletex);
-        tile->SetRect(0,0,128,128);
-        tile->SetTpf(32);
         
     }
     

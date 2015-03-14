@@ -19,14 +19,20 @@ namespace objects {
         Engine *e;
         Tile ***map;
         List<Tile> tpl;
+        int width, height; //with and height of layer in # of tiles
+        int twidth, theight; //with and height of all tiles
     
     public:
         TileMap(Engine *e);
         virtual ~TileMap();
         
         void AddTemplate(const char *symbol, Tile *t);
+        void SetTileSize(int w, int h);
         void Set(int w, int h, const char **s);
         void Clear();
+        
+        void Update(Uint32 dt);
+        void Draw(Uint32 dt);
     };
 }
 #endif /* defined(__BlackLid__TileMap__) */

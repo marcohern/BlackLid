@@ -33,8 +33,12 @@
 namespace engines {
     
     const char *TileTestEngine::ss[] = {
-        ". ",
-        " ."
+        "...o.oOOo",
+        "..o o   .",
+        "         ",
+        "         ",
+        "  o  .   ",
+        ".oOo.o..o"
     };
     
     TileTestEngine::TileTestEngine() : Engine() {
@@ -47,15 +51,41 @@ namespace engines {
     
     void TileTestEngine::Setup() {
         Engine::Setup();
-        map->Set(2, 2, ss);
+        
+        std::string path = Settings::GetInstance()->GetResourcePath("/test/tile-rocks.png");
+        tiletex = IMG_LoadTexture(this->renderer, path.c_str());
+        tile = new objects::Tile(this);
+        tile->SetTexture(tiletex);
+        tile->SetRect(0,0,128,128);
+        tile->SetTpf(32);
+        
+        path = Settings::GetInstance()->GetResourcePath("/test/tile-rocks-d1.png");
+        tiletex = IMG_LoadTexture(this->renderer, path.c_str());
+        tiled1 = new objects::Tile(this);
+        tiled1->SetTexture(tiletex);
+        tiled1->SetRect(0,0,128,128);
+        tiled1->SetTpf(32);
+        
+        path = Settings::GetInstance()->GetResourcePath("/test/tile-rocks-d2.png");
+        tiletex = IMG_LoadTexture(this->renderer, path.c_str());
+        tiled2 = new objects::Tile(this);
+        tiled2->SetTexture(tiletex);
+        tiled2->SetRect(0,0,128,128);
+        tiled2->SetTpf(32);
+        
+        
+        map->AddTemplate(".", tile);
+        map->AddTemplate("o", tiled1);
+        map->AddTemplate("O", tiled2);
+        map->SetTileSize(128,128);
+        map->Set(9, 6, ss);
     }
     
     void TileTestEngine::Update(Uint32 dt) {
-        //Engine::Update(dt);
+        map->Update(dt);
     }
     
     void TileTestEngine::Draw(Uint32 dt) {
-        //Engine::Draw(dt);
-        
+        map->Draw(dt);
     }
 }

@@ -19,6 +19,8 @@ namespace engines {
         
         static const char * ss[];
         
+        objects::Tile *tile, *tiled1, *tiled2;
+        SDL_Texture *tiletex;
         TileMap *map;
         
     protected:

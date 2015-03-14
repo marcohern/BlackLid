@@ -37,11 +37,18 @@ namespace objects {
         this->tpl.Add(symbol, t);
     }
     
+    void TileMap::SetTileSize(int w, int h) {
+        this->twidth = w;
+        this->theight = h;
+    }
+    
     void TileMap::Set(int w, int h, const char **s) {
         int i,j;
         char id[2];
         id[0] = ' ';
         id[1] = '\0';
+        this->width = w;
+        this->height = h;
         map = new Tile**[h];
         for (i=0;i<h;i++) {
             map[i] = new Tile*[w];
@@ -51,6 +58,29 @@ namespace objects {
                 Tile *t = this->tpl.Find(id);
                 if (t!=NULL) {
                     map[i][j] = t;
+                }
+            }
+        }
+    }
+    
+    void TileMap::Update(Uint32 dt) {
+        int i,j;
+        for (i=0; i<height; i++) {
+            for (j=0; j<width; j++) {
+                if (map[i][j] != NULL) {
+                    map[i][j]->Update(dt);
+                }
+            }
+        }
+    }
+    
+    void TileMap::Draw(Uint32 dt) {
+        int i,j;
+        for (i=0; i<height; i++) {
+            for (j=0; j<width; j++) {
+                if (map[i][j] != NULL) {
+                    map[i][j]->SetXY(j*twidth,i*theight);
+                    map[i][j]->Draw(dt);
                 }
             }
         }
