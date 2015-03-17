@@ -17,6 +17,7 @@
 #include "../core/Vector2D.h"
 #include "../core/Draw.h"
 #include "../core/List.h"
+#include "../core/Camera.h"
 
 #include "../objects/Placeable.h"
 #include "../objects/Drawable.h"
@@ -33,12 +34,13 @@
 namespace engines {
     
     const char *TileTestEngine::ss[] = {
-        "...o.oOOo",
-        "..o o   .",
-        "         ",
-        "         ",
-        "  o  .   ",
-        ".oOo.o..o"
+        "...o.oOOo.o.o.oooo",
+        "..o o   .   .  ...",
+        "                  ",
+        "                  ",
+        "                  ",
+        "  o  .      .o.   ",
+        ".oOo.o..oo..oOo..."
     };
     
     TileTestEngine::TileTestEngine() : Engine() {
@@ -78,7 +80,13 @@ namespace engines {
         map->AddTemplate("o", tiled1);
         map->AddTemplate("O", tiled2);
         map->SetTileSize(128,128);
-        map->Set(9, 6, ss);
+        map->Set(18, 7, ss);
+        
+        path = Settings::GetInstance()->GetResourcePath("/test/filter_radial_b.png");
+        filtertex = IMG_LoadTexture(this->renderer, path.c_str());
+        fr.w=1280;fr.h=720;fr.x=0;fr.y=0;
+        
+        this->camera->SetPosition(0.0,-64.0);
     }
     
     void TileTestEngine::Update(Uint32 dt) {
@@ -87,5 +95,6 @@ namespace engines {
     
     void TileTestEngine::Draw(Uint32 dt) {
         map->Draw(dt);
+        SDL_RenderCopy(this->GetRenderer(), filtertex, NULL, &fr);
     }
 }

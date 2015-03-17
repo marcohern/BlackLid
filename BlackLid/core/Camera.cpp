@@ -37,4 +37,12 @@ namespace core{
     Vector2D Camera::GetPosition() {
         return position;
     }
+    
+    void Camera::SetPosition(float x, float y) {
+        position.SetXY(x, y);
+    }
+    
+    void Camera::Update(Uint32 dt) {
+        
+    }
 }

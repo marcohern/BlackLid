@@ -23,6 +23,9 @@ namespace engines {
         SDL_Texture *tiletex;
         TileMap *map;
         
+        SDL_Texture *filtertex;
+        SDL_Rect fr;
+        
     protected:
         virtual void Update(Uint32 dt);
         virtual void Draw(Uint32 dt);

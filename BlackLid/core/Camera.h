@@ -23,6 +23,7 @@ namespace core {
         virtual void Update(Uint32 dt) = 0;
         Vector2D GetPosition();
         SDL_Point GetSdlPosition();
+        void SetPosition(float x, float y);
     };
 }
 
