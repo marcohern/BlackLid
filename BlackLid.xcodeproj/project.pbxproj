@@ -36,6 +36,7 @@
 		A79B649A1A91302A0064E776 /* Animation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A79B64981A91302A0064E776 /* Animation.cpp */; };
 		A79B649D1A977F1B0064E776 /* Tile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A79B649B1A977F1B0064E776 /* Tile.cpp */; };
 		A79B64A01A9796C50064E776 /* TileMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A79B649E1A9796C50064E776 /* TileMap.cpp */; };
+		A7C4273C1AB8F98F006DEDA7 /* Character.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A7C4273A1AB8F98F006DEDA7 /* Character.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +100,8 @@
 		A79B649C1A977F1B0064E776 /* Tile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tile.h; path = BlackLid/objects/Tile.h; sourceTree = "<group>"; };
 		A79B649E1A9796C50064E776 /* TileMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TileMap.cpp; path = BlackLid/objects/TileMap.cpp; sourceTree = "<group>"; };
 		A79B649F1A9796C50064E776 /* TileMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TileMap.h; path = BlackLid/objects/TileMap.h; sourceTree = "<group>"; };
+		A7C4273A1AB8F98F006DEDA7 /* Character.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Character.cpp; path = BlackLid/objects/Character.cpp; sourceTree = "<group>"; };
+		A7C4273B1AB8F98F006DEDA7 /* Character.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Character.h; path = BlackLid/objects/Character.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -268,6 +271,8 @@
 				A79B649E1A9796C50064E776 /* TileMap.cpp */,
 				A79B649F1A9796C50064E776 /* TileMap.h */,
 				A79B649C1A977F1B0064E776 /* Tile.h */,
+				A7C4273A1AB8F98F006DEDA7 /* Character.cpp */,
+				A7C4273B1AB8F98F006DEDA7 /* Character.h */,
 			);
 			name = objects;
 			path = ..;
@@ -367,6 +372,7 @@
 				A79B649D1A977F1B0064E776 /* Tile.cpp in Sources */,
 				A718EA901A887ACF0016CF14 /* Create.cpp in Sources */,
 				A79B64931A91261B0064E776 /* Placeable.cpp in Sources */,
+				A7C4273C1AB8F98F006DEDA7 /* Character.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
