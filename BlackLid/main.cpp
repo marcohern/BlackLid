@@ -37,7 +37,7 @@ using namespace tests;
 using namespace engines;
 
 void rungame() {
-    TileTestEngine e;
+    AnimationsEngine e;
     try {
         e.Setup();
         e.Run();
@@ -52,7 +52,7 @@ void runtest() {
     Test::RunAllTests();
 }
 
-int main(int argc, const char * args[]) {
+int main(int argc, char * args[]) {
     printf("path: %s\n", args[0]);
     Settings::GetInstance()->SetPathBase(args[0]);
     rungame();

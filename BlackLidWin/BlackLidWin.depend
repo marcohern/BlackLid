@@ -1,0 +1,1327 @@
+# depslib dependency file v1.0
+1428608933 source:c:\users\marco.hernandez\development\blacklid\blacklid\cameras\scrollcamera.cpp
+	<stdio.h>
+	<SDL2/SDL.h>
+	"../core/Vector2D.h"
+	"../input/InputCommand.h"
+	"../core/Fps.h"
+	"../core/Engine.h"
+	"../core/Camera.h"
+	"ScrollCamera.h"
+
+1394253593 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\include\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_haptic.h"
+	"SDL_hints.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\include\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\include\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<iconv.h>
+	"begin_code.h"
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"close_code.h"
+
+1394253593 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\include\sdl2\sdl_config.h
+	"SDL_platform.h"
+
+1394253593 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\include\sdl2\sdl_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\include\sdl2\begin_code.h
+
+1394253593 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\include\sdl2\close_code.h
+
+1394253593 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\include\sdl2\sdl_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1394253593 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\include\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\include\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\include\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\include\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\include\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\include\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	"close_code.h"
+
+1394253593 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\include\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\include\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\include\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<altivec.h>
+	<mmintrin.h>
+	<mm3dnow.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\include\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\include\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\include\sdl2\sdl_pixels.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\include\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\include\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\include\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\include\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\include\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1394253593 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\include\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1394253593 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\include\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\include\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\include\sdl2\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\include\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1394253593 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\include\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\include\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\include\sdl2\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\include\sdl2\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\include\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\include\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\include\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\include\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\include\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\include\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\include\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\include\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\include\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1428608933 c:\users\marco.hernandez\development\blacklid\blacklid\core\vector2d.h
+
+1428608933 c:\users\marco.hernandez\development\blacklid\blacklid\input\inputcommand.h
+	<stdio.h>
+	<SDL2/SDL.h>
+
+1428608933 c:\users\marco.hernandez\development\blacklid\blacklid\core\fps.h
+
+1428678913 c:\users\marco.hernandez\development\blacklid\blacklid\core\engine.h
+
+1428608933 c:\users\marco.hernandez\development\blacklid\blacklid\core\camera.h
+
+1428608933 c:\users\marco.hernandez\development\blacklid\blacklid\cameras\scrollcamera.h
+
+1428608933 source:c:\users\marco.hernandez\development\blacklid\blacklid\core\assert.cpp
+	<stdio.h>
+	<string>
+	<iostream>
+	<sstream>
+	"Vector2D.h"
+	"GameException.h"
+	"../exceptions/AssertException.h"
+	"Assert.h"
+
+1428608933 c:\users\marco.hernandez\development\blacklid\blacklid\core\gameexception.h
+
+1428608933 c:\users\marco.hernandez\development\blacklid\blacklid\exceptions\assertexception.h
+
+1428608933 c:\users\marco.hernandez\development\blacklid\blacklid\core\assert.h
+
+1428608933 source:c:\users\marco.hernandez\development\blacklid\blacklid\core\camera.cpp
+	<stdio.h>
+	<SDL2/SDL.h>
+	"Fps.h"
+	"../input/InputCommand.h"
+	"Engine.h"
+	"Vector2D.h"
+	"Camera.h"
+
+1428608933 source:c:\users\marco.hernandez\development\blacklid\blacklid\core\create.cpp
+	<stdio.h>
+	<SDL2/SDL.h>
+	"Vector2D.h"
+	"../input/InputCommand.h"
+	"Fps.h"
+	"Engine.h"
+	"Create.h"
+
+1428608933 c:\users\marco.hernandez\development\blacklid\blacklid\core\create.h
+
+1428608933 source:c:\users\marco.hernandez\development\blacklid\blacklid\core\draw.cpp
+	<stdio.h>
+	<SDL2/SDL.h>
+	"Vector2D.h"
+	"Fps.h"
+	"Camera.h"
+	"../input/InputCommand.h"
+	"Engine.h"
+	"Draw.h"
+
+1428608933 c:\users\marco.hernandez\development\blacklid\blacklid\core\draw.h
+
+1428608933 source:c:\users\marco.hernandez\development\blacklid\blacklid\core\engine.cpp
+	<stdio.h>
+	<iostream>
+	<exception>
+	<SDL2/SDL.h>
+	"Vector2D.h"
+	"GameException.h"
+	"../core/define.h"
+	"Settings.h"
+	"Create.h"
+	"Camera.h"
+	"Draw.h"
+	"Fps.h"
+	"../input/InputCommand.h"
+	"../objects/Placeable.h"
+	"../cameras/ScrollCamera.h"
+	"Engine.h"
+
+1428608933 c:\users\marco.hernandez\development\blacklid\blacklid\core\define.h
+	"define_mac.h"
+	"define_win.h"
+
+1428608933 c:\users\marco.hernandez\development\blacklid\blacklid\core\define_mac.h
+
+1428608933 c:\users\marco.hernandez\development\blacklid\blacklid\core\define_win.h
+
+1428608933 c:\users\marco.hernandez\development\blacklid\blacklid\core\settings.h
+
+1428608934 c:\users\marco.hernandez\development\blacklid\blacklid\objects\placeable.h
+
+1428608933 source:c:\users\marco.hernandez\development\blacklid\blacklid\core\forcefield.cpp
+	"ForceField.h"
+
+1428608933 c:\users\marco.hernandez\development\blacklid\blacklid\core\forcefield.h
+	<stdio.h>
+
+1428608933 source:c:\users\marco.hernandez\development\blacklid\blacklid\core\fps.cpp
+	<stdio.h>
+	<SDL2/SDL.h>
+	"define.h"
+	"Fps.h"
+
+1428683059 source:c:\users\marco.hernandez\development\blacklid\blacklid\core\gameexception.cpp
+	<stdio.h>
+	<string.h>
+	<iostream>
+	<exception>
+	"GameException.h"
+
+1428683509 source:c:\users\marco.hernandez\development\blacklid\blacklid\core\matrix.cpp
+	<stdarg.h>
+	<stdio.h>
+	<sstream>
+	"Vector2D.h"
+	"Matrix.h"
+
+1428608933 c:\users\marco.hernandez\development\blacklid\blacklid\core\matrix.h
+
+1428608933 source:c:\users\marco.hernandez\development\blacklid\blacklid\core\settings.cpp
+	<stdio.h>
+	<string>
+	<iostream>
+	"../core/define.h"
+	"Settings.h"
+
+1428608933 source:c:\users\marco.hernandez\development\blacklid\blacklid\core\test.cpp
+	<stdio.h>
+	"List.h"
+	"Test.h"
+
+1428608933 c:\users\marco.hernandez\development\blacklid\blacklid\core\list.h
+	"ListItem.h"
+
+1428608933 c:\users\marco.hernandez\development\blacklid\blacklid\core\listitem.h
+	<string>
+
+1428608933 c:\users\marco.hernandez\development\blacklid\blacklid\core\test.h
+
+1428608933 source:c:\users\marco.hernandez\development\blacklid\blacklid\core\vector2d.cpp
+	<stdio.h>
+	<math.h>
+	"Vector2D.h"
+
+1428608933 source:c:\users\marco.hernandez\development\blacklid\blacklid\engines\animationsengine.cpp
+	<stdio.h>
+	<SDL2/SDL.h>
+	<SDL2_image/SDL_image.h>
+	<string>
+	"../core/define.h"
+	"../core/Settings.h"
+	"../core/Create.h"
+	"../core/Vector2D.h"
+	"../core/Draw.h"
+	"../core/List.h"
+	"../objects/Placeable.h"
+	"../objects/Drawable.h"
+	"../objects/Animation.h"
+	"../objects/Tile.h"
+	"../core/Fps.h"
+	"../input/InputCommand.h"
+	"../core/Engine.h"
+	"AnimationsEngine.h"
+
+1376156316 c:\users\marco.hernandez\development\blacklid\sdl2_image-2.0.0\sdl2_image\sdl_image.h
+	"SDL.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1428608934 c:\users\marco.hernandez\development\blacklid\blacklid\objects\drawable.h
+
+1428608934 c:\users\marco.hernandez\development\blacklid\blacklid\objects\animation.h
+
+1428608934 c:\users\marco.hernandez\development\blacklid\blacklid\objects\tile.h
+
+1428608933 c:\users\marco.hernandez\development\blacklid\blacklid\engines\animationsengine.h
+	<stdio.h>
+
+1428608933 source:c:\users\marco.hernandez\development\blacklid\blacklid\engines\tiletestengine.cpp
+	<stdio.h>
+	<SDL2/SDL.h>
+	<SDL2_image/SDL_image.h>
+	<string>
+	"../core/define.h"
+	"../core/Settings.h"
+	"../core/Create.h"
+	"../core/Vector2D.h"
+	"../core/Draw.h"
+	"../core/List.h"
+	"../core/Camera.h"
+	"../objects/Placeable.h"
+	"../objects/Drawable.h"
+	"../objects/Animation.h"
+	"../objects/Tile.h"
+	"../objects/TileMap.h"
+	"../core/Fps.h"
+	"../input/InputCommand.h"
+	"../core/Engine.h"
+	"TileTestEngine.h"
+
+1428608934 c:\users\marco.hernandez\development\blacklid\blacklid\objects\tilemap.h
+
+1428608933 c:\users\marco.hernandez\development\blacklid\blacklid\engines\tiletestengine.h
+	<stdio.h>
+
+1428608933 source:c:\users\marco.hernandez\development\blacklid\blacklid\exceptions\assertexception.cpp
+	<stdio.h>
+	<iostream>
+	<exception>
+	"../core/GameException.h"
+	"AssertException.h"
+
+1428608933 source:c:\users\marco.hernandez\development\blacklid\blacklid\input\inputcommand.cpp
+	"InputCommand.h"
+
+1428608933 source:c:\users\marco.hernandez\development\blacklid\blacklid\input\inputkeymap.cpp
+	"InputKeyMap.h"
+
+1428608933 c:\users\marco.hernandez\development\blacklid\blacklid\input\inputkeymap.h
+	<stdio.h>
+	<SDL2/SDL.h>
+
+1428692830 source:c:\users\marco.hernandez\development\blacklid\blacklid\main.cpp
+	<stdio.h>
+	<string>
+	<SDL2/SDL.h>
+	"core/define.h"
+	"core/Settings.h"
+	"core/GameException.h"
+	"core/Vector2D.h"
+	"core/List.h"
+	"objects/Placeable.h"
+	"objects/Drawable.h"
+	"objects/Animation.h"
+	"objects/Tile.h"
+	"objects/TileMap.h"
+	"input/InputCommand.h"
+	"core/Fps.h"
+	"core/Engine.h"
+	"engines/AnimationsEngine.h"
+	"engines/TileTestEngine.h"
+	"core/Test.h"
+	"tests/Vector2DTest.h"
+
+1428608934 c:\users\marco.hernandez\development\blacklid\blacklid\tests\vector2dtest.h
+	<stdio.h>
+	"../core/Test.h"
+	"../core/Assert.h"
+	"../core/Vector2D.h"
+
+1428608933 source:c:\users\marco.hernandez\development\blacklid\blacklid\objects\animation.cpp
+	<stdio.h>
+	<SDL2/SDL.h>
+	<string>
+	"../input/InputCommand.h"
+	"../core/Fps.h"
+	"../core/Engine.h"
+	"../core/Vector2D.h"
+	"../core/define.h"
+	"../core/Settings.h"
+	"../core/Fps.h"
+	"../core/Draw.h"
+	"Placeable.h"
+	"Drawable.h"
+	"Animation.h"
+
+1428608934 source:c:\users\marco.hernandez\development\blacklid\blacklid\objects\character.cpp
+	<stdio.h>
+	<SDL2/SDL.h>
+	<string>
+	"../input/InputCommand.h"
+	"../core/Fps.h"
+	"../core/Engine.h"
+	"../core/Vector2D.h"
+	"../core/define.h"
+	"../core/Settings.h"
+	"../core/Fps.h"
+	"../core/Draw.h"
+	"Placeable.h"
+	"Drawable.h"
+	"Character.h"
+
+1428608934 c:\users\marco.hernandez\development\blacklid\blacklid\objects\character.h
+	<stdio.h>
+
+1428608934 source:c:\users\marco.hernandez\development\blacklid\blacklid\objects\drawable.cpp
+	<stdio.h>
+	<SDL2/SDL.h>
+	<string>
+	"../input/InputCommand.h"
+	"../core/Fps.h"
+	"../core/Engine.h"
+	"../core/Vector2D.h"
+	"../core/define.h"
+	"../core/Settings.h"
+	"../core/Fps.h"
+	"../core/Draw.h"
+	"Placeable.h"
+	"Drawable.h"
+
+1428608934 source:c:\users\marco.hernandez\development\blacklid\blacklid\objects\placeable.cpp
+	<stdio.h>
+	<SDL2/SDL.h>
+	<string>
+	"../input/InputCommand.h"
+	"../core/Fps.h"
+	"../core/Engine.h"
+	"../core/Vector2D.h"
+	"../core/define.h"
+	"../core/Settings.h"
+	"../core/Fps.h"
+	"../core/Draw.h"
+	"Placeable.h"
+
+1428608934 source:c:\users\marco.hernandez\development\blacklid\blacklid\objects\tile.cpp
+	<stdio.h>
+	<SDL2/SDL.h>
+	<string>
+	"../core/define.h"
+	"../input/InputCommand.h"
+	"../core/List.h"
+	"../core/Fps.h"
+	"../core/Engine.h"
+	"../core/Vector2D.h"
+	"../core/Settings.h"
+	"../core/Fps.h"
+	"../core/Draw.h"
+	"Placeable.h"
+	"Drawable.h"
+	"Animation.h"
+	"Tile.h"
+
+1428608934 source:c:\users\marco.hernandez\development\blacklid\blacklid\objects\tilemap.cpp
+	<stdio.h>
+	"../core/define.h"
+	"../input/InputCommand.h"
+	"../core/List.h"
+	"../core/Fps.h"
+	"../core/Engine.h"
+	"../core/Vector2D.h"
+	"../core/Settings.h"
+	"../core/Fps.h"
+	"../core/Draw.h"
+	"Placeable.h"
+	"Drawable.h"
+	"Animation.h"
+	"Tile.h"
+	"TileMap.h"
+
+1428608934 source:c:\users\marco.hernandez\development\blacklid\blacklid\tests\vector2dtest.cpp
+	<stdio.h>
+	<iostream>
+	"../core/GameException.h"
+	"../exceptions/AssertException.h"
+	"../core/define.h"
+	"../core/Vector2D.h"
+	"../core/List.h"
+	"Vector2DTest.h"
+
+1394937196 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\i686-w64-mingw32\include\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_haptic.h"
+	"SDL_hints.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937196 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\i686-w64-mingw32\include\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937197 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\i686-w64-mingw32\include\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<float.h>
+	<iconv.h>
+	"begin_code.h"
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"close_code.h"
+
+1394937197 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\i686-w64-mingw32\include\sdl2\sdl_config.h
+	"SDL_platform.h"
+
+1428688250 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\i686-w64-mingw32\include\sdl2\sdl_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	<winapifamily.h>
+	"begin_code.h"
+	"close_code.h"
+
+1394937197 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\i686-w64-mingw32\include\sdl2\begin_code.h
+
+1394937197 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\i686-w64-mingw32\include\sdl2\close_code.h
+
+1394937196 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\i686-w64-mingw32\include\sdl2\sdl_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1394937196 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\i686-w64-mingw32\include\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937196 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\i686-w64-mingw32\include\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937196 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\i686-w64-mingw32\include\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937196 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\i686-w64-mingw32\include\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1394937197 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\i686-w64-mingw32\include\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937197 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\i686-w64-mingw32\include\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	"close_code.h"
+
+1394937197 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\i686-w64-mingw32\include\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937196 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\i686-w64-mingw32\include\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937196 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\i686-w64-mingw32\include\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<altivec.h>
+	<mmintrin.h>
+	<mm3dnow.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1394937196 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\i686-w64-mingw32\include\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937197 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\i686-w64-mingw32\include\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937197 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\i686-w64-mingw32\include\sdl2\sdl_pixels.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937197 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\i686-w64-mingw32\include\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937197 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\i686-w64-mingw32\include\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937196 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\i686-w64-mingw32\include\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1394937196 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\i686-w64-mingw32\include\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937196 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\i686-w64-mingw32\include\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1394937197 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\i686-w64-mingw32\include\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1394937196 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\i686-w64-mingw32\include\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937196 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\i686-w64-mingw32\include\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937196 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\i686-w64-mingw32\include\sdl2\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937197 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\i686-w64-mingw32\include\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1394937196 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\i686-w64-mingw32\include\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937197 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\i686-w64-mingw32\include\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937196 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\i686-w64-mingw32\include\sdl2\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937196 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\i686-w64-mingw32\include\sdl2\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937196 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\i686-w64-mingw32\include\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937196 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\i686-w64-mingw32\include\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937196 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\i686-w64-mingw32\include\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937196 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\i686-w64-mingw32\include\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937197 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\i686-w64-mingw32\include\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937197 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\i686-w64-mingw32\include\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937197 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\i686-w64-mingw32\include\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937197 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\i686-w64-mingw32\include\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937197 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\i686-w64-mingw32\include\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937281 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\x86_64-w64-mingw32\include\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_haptic.h"
+	"SDL_hints.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937281 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\x86_64-w64-mingw32\include\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937281 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\x86_64-w64-mingw32\include\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<float.h>
+	<iconv.h>
+	"begin_code.h"
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"close_code.h"
+
+1394937281 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\x86_64-w64-mingw32\include\sdl2\sdl_config.h
+	"SDL_platform.h"
+
+1428690504 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\x86_64-w64-mingw32\include\sdl2\sdl_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	<winapifamily.h>
+	"begin_code.h"
+	"close_code.h"
+
+1394937281 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\x86_64-w64-mingw32\include\sdl2\begin_code.h
+
+1394937281 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\x86_64-w64-mingw32\include\sdl2\close_code.h
+
+1394937281 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\x86_64-w64-mingw32\include\sdl2\sdl_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1394937281 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\x86_64-w64-mingw32\include\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937281 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\x86_64-w64-mingw32\include\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937281 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\x86_64-w64-mingw32\include\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937281 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\x86_64-w64-mingw32\include\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1394937281 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\x86_64-w64-mingw32\include\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937281 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\x86_64-w64-mingw32\include\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	"close_code.h"
+
+1394937281 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\x86_64-w64-mingw32\include\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937281 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\x86_64-w64-mingw32\include\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937281 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\x86_64-w64-mingw32\include\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<altivec.h>
+	<mmintrin.h>
+	<mm3dnow.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1394937281 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\x86_64-w64-mingw32\include\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937281 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\x86_64-w64-mingw32\include\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937281 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\x86_64-w64-mingw32\include\sdl2\sdl_pixels.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937281 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\x86_64-w64-mingw32\include\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937281 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\x86_64-w64-mingw32\include\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937281 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\x86_64-w64-mingw32\include\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1394937281 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\x86_64-w64-mingw32\include\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937281 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\x86_64-w64-mingw32\include\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1394937281 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\x86_64-w64-mingw32\include\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1394937281 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\x86_64-w64-mingw32\include\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937281 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\x86_64-w64-mingw32\include\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937281 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\x86_64-w64-mingw32\include\sdl2\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937281 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\x86_64-w64-mingw32\include\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1394937281 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\x86_64-w64-mingw32\include\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937281 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\x86_64-w64-mingw32\include\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937281 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\x86_64-w64-mingw32\include\sdl2\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937281 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\x86_64-w64-mingw32\include\sdl2\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937281 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\x86_64-w64-mingw32\include\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937281 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\x86_64-w64-mingw32\include\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937281 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\x86_64-w64-mingw32\include\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937281 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\x86_64-w64-mingw32\include\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937281 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\x86_64-w64-mingw32\include\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937281 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\x86_64-w64-mingw32\include\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937281 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\x86_64-w64-mingw32\include\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937281 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\x86_64-w64-mingw32\include\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937281 c:\users\marco.hernandez\development\blacklid\sdl2-2.0.3-mingw-win\x86_64-w64-mingw32\include\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1376156342 c:\users\marco.hernandez\development\blacklid\sdl2_image-2.0.0\i686-w64-mingw32\include\sdl2_image\sdl_image.h
+	"SDL.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+

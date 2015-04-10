@@ -7,6 +7,7 @@
 //
 
 #include <stdio.h>
+#include <string.h>
 #include <iostream>
 #include <exception>
 #include "GameException.h"
@@ -15,7 +16,7 @@ namespace core{
     GameException::GameException(std::string msg) {
         strcpy(message, msg.c_str());
     }
-    
+
     const char *GameException::what() const throw() {
         return message;
     }

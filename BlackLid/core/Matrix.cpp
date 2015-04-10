@@ -5,6 +5,7 @@
 //  Created by Marco Hernandez on 10/02/15.
 //  Copyright (c) 2015 Marco Hernandez. All rights reserved.
 //
+#include <stdarg.h>
 #include <stdio.h>
 #include <sstream>
 #include "Vector2D.h"
@@ -17,13 +18,13 @@ namespace core {
         }
         delete[] m;
     }
-    
+
     Matrix::Matrix(int w, int h, int l, ...) {
         va_list vl;
         this->w = w;
         this->h = h;
         int n=0;
-        
+
         va_start(vl,l);
         this->m = new float*[h];
         for (int i=0;i<h;i++) {
@@ -34,14 +35,14 @@ namespace core {
                 n++;
             }
         }
-        
+
         va_end(vl);
     }
-    
+
     Matrix::Matrix(int w, int h) {
         new (this)Matrix(w,h,w*h,0);
     }
-    
+
     Matrix::Matrix(const Matrix& m) {
         this->w = m.w;
         this->h = m.h;
@@ -53,11 +54,11 @@ namespace core {
             }
         }
     }
-    
+
     double Matrix::Get(int i, int j) {
         return m[i][j];
     }
-    
+
     Matrix Matrix::T() {
         Matrix mx(this->h, this->w);
         for (int i=0;i<mx.h;i++) {
@@ -67,13 +68,13 @@ namespace core {
         }
         return mx;
     }
-    
+
     Matrix Matrix::GetZero(int w, int h)
     {
         Matrix z(w,h,0.0);
         return z;
     }
-    
+
     Matrix Matrix::GetIdentity(int l) {
         Matrix ma(l,l,0.0);
         for(int i=0;i<l;i++) {
@@ -81,10 +82,10 @@ namespace core {
         }
         return ma;
     }
-    
+
     Matrix Matrix::Convert(const Vector2D& v, const bool horiz=true) {
         Matrix *m;
-        
+
         if (horiz) {
             m = new Matrix(2,1,2,v.GetX(), v.GetY());
         } else {
