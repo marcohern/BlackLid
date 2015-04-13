@@ -56,5 +56,23 @@ int main(int argc, char * args[]) {
     printf("path: %s\n", args[0]);
     Settings::GetInstance()->SetPathBase(args[0]);
     rungame();
+#ifdef __APPLE__
+    printf("OS: APPLE\n");
+#endif
+#ifdef __APPLE_CC__
+    printf("OS: APPLE_CC\n");
+#endif
+#ifdef __OSX__
+    printf("OS: OSX\n");
+#endif
+#ifdef __MACH__
+    printf("OS: MACH\n");
+#endif
+#ifdef __MINGW32__
+    printf("OS: MinGW Windows\n");
+#endif
+#ifdef WIN32
+    printf("OS: Windows\n");
+#endif
     return 0;
 }
