@@ -13,7 +13,7 @@
 #define TAU 6.28318530718
 #define TPS 1000
 
-#ifdef __OSX__
+#ifdef __APPLE_CC__
 
 #include "define_mac.h"
 

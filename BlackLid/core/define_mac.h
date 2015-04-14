@@ -10,5 +10,6 @@
 #define BlackLid_define_mac_h
 
 #define RESOURSE_DIR "/Resources/content"
+#define DS "/"
 
 #endif

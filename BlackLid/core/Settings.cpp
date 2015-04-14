@@ -36,9 +36,9 @@ namespace core{
     
     void Settings::SetPathBase(const char *path) {
         this->path = path;
-        unsigned long lof = this->path.find_last_of("/");
+        unsigned long lof = this->path.find_last_of(DS);
         this->path = this->path.substr(0, lof);
-        lof = this->path.find_last_of("/");
+        lof = this->path.find_last_of(DS);
         this->path = this->path.substr(0, lof);
     }
     
@@ -48,7 +48,7 @@ namespace core{
     
     std::string Settings::GetResourcePath(const char *path) {
         std::string result(this->path);
-        result.append("/Resources/content");
+        result.append(RESOURSE_DIR);
         result.append(path);
         return result;
     }

@@ -9,6 +9,7 @@
 #ifndef BlackLid_define_win_h
 #define BlackLid_define_win_h
 
-#define RESOURSE_DIR "/content"
+#define RESOURSE_DIR "\\content"
+#define DS "\\"
 
 #endif
